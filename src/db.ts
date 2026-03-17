@@ -1,7 +1,7 @@
 import Database from "better-sqlite3";
 import { join } from "path";
 
-const DB_PATH = join(import.meta.dirname!, "..", "data", "games.db");
+const DB_PATH = join(import.meta.dirname!, "..", "data", "data.db");
 
 export function getDb(): Database.Database {
   const db = new Database(DB_PATH);
