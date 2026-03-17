@@ -1,0 +1,13 @@
+{
+  "name": "ananicy-rules-generator",
+  "type": "module",
+  "dependencies": {
+    "better-sqlite3": "^12.8.0",
+    "steam-user": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
