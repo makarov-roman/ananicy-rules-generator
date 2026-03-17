@@ -13,7 +13,7 @@ docker run -v ./data:/app/data ananicy-rules fetch-spy
 docker run -v ./data:/app/data ananicy-rules fetch-pics
 
 # Generate rules
-docker run -v ./data:/app/data ananicy-rules generate --min-reviews 1000 --top-weekly
+docker run -v ./data:/app/data ananicy-rules generate --min-reviews 1000 --top-weekly 1000
 
 # directly
 npm install
