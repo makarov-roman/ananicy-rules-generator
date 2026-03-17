@@ -40,25 +40,24 @@ export async function fetchSteamSpy(startPage = 0) {
       break;
     }
 
-    let minReviews = Infinity;
-    let sumReviews = 0;
-    let sumMedian = 0;
+    const reviewCounts: number[] = [];
+    const medianValues: number[] = [];
 
     const insertMany = db.transaction(() => {
       for (const entry of entries) {
         const reviews = entry.positive + entry.negative;
-        if (reviews < minReviews) minReviews = reviews;
-        sumReviews += reviews;
-        sumMedian += entry.median_2weeks;
+        reviewCounts.push(reviews);
+        medianValues.push(entry.median_2weeks);
         insert.run(entry.appid, entry.name, reviews, entry.median_2weeks);
       }
     });
     insertMany();
 
     totalInserted += entries.length;
-    const avgReviews = Math.round(sumReviews / entries.length);
-    const avgMedian = Math.round(sumMedian / entries.length);
-    console.log(`  Page ${page}: ${entries.length} inserted (${totalInserted} total) | min reviews: ${minReviews}, avg reviews: ${avgReviews}, avg median2weeks: ${avgMedian}`);
+    reviewCounts.sort((a, b) => a - b);
+    medianValues.sort((a, b) => a - b);
+    const p80 = Math.ceil(reviewCounts.length * 0.8) - 1;
+    console.log(`  Page ${page}: ${entries.length} inserted (${totalInserted} total) | min reviews: ${reviewCounts[0]}, p80 reviews: ${reviewCounts[p80]}, p80 median2weeks: ${medianValues[p80]}`);
 
     page++;
     console.log(`  Rate limiting: waiting ${RATE_LIMIT_MS / 1000}s...`);
