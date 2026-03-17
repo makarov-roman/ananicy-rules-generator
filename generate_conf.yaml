@@ -1,0 +1,2331 @@
+filters:
+  - remove-non-bin
+  - remove-sh
+
+overrides:
+  240: # Counter-Strike: Source
+    - cstrike_win64.exe
+    - cstrike.exe
+    - cstrike.sh
+  440: # Team Fortress 2
+    - tf_linux64
+    - tf.sh
+  620: # Portal 2
+    - portal2_linux
+    - portal2.exe
+  730: # Counter-Strike: Global Offensive
+    - cs2
+    - csgo_linux64
+  1313: # SiN Gold
+    - sin.exe
+  2610: # GUN
+    - Gun.exe
+  3730: # Aliens versus Predator Classic 2000
+    - AvP_Classic.exe
+  4000: # Garry's Mod
+    - gmod
+    - gmod.exe
+  4420: # Silverfall
+    - Silverfall.exe
+  4470: # Silverfall: Earth Awakening
+    - silverfall.exe
+  4700: # Total War: MEDIEVAL II – Definitive Edition
+    - Medieval2
+    - Medieval2.sh
+  4720: # Condemned: Criminal Origins
+    - Condemned.exe
+  4920: # Natural Selection 2
+    - ns2_linux
+  6850: # Hitman 2: Silent Assassin
+    - hitman2.exe
+  6860: # Hitman: Blood Money
+    - HitmanBloodMoney.exe
+  6900: # Hitman: Codename 47
+    - Hitman.Exe
+  6920: # Deus Ex: Invisible War
+    - dx2.exe
+    - DX2Main.exe
+  6980: # Thief: Deadly Shadows
+    - t3.exe
+    - T3Main.exe
+  7210: # Runaway, A Road Adventure
+    - Runaway.exe
+  7220: # Runaway, The Dream of The Turtle
+    - RunawayTDOTT.exe
+  7670: # BioShock
+    - Bioshock.exe
+  8500: # EVE Online
+    - eve-online.exe
+  8850: # BioShock 2
+    - Bioshock2.exe
+  8870: # BioShock Infinite
+    - bioshock
+    - bioshock.i386
+    - BioShockInfinite.exe
+  8930: # Sid Meier's Civilization V
+    - Civ5XP
+  9200: # RAGE
+    - rage.exe
+  9480: # Saints Row 2
+    - SR2_pc.exe
+  9900: # Star Trek Online
+    - GameClient.exe
+  10180: # Call of Duty: Modern Warfare 2 (2009)
+    - iw4mp.exe
+    - iw4sp.exe
+  10500: # Total War: EMPIRE – Definitive Edition
+    - Empire.sh
+  10680: # Aliens vs. Predator
+    - AvP_DX11.exe
+    - AvP.exe
+  12210: # Grand Theft Auto IV: The Complete Edition
+    - GTAIV.exe
+  13230: # Unreal Tournament 2004: Editor's Choice Edition
+    - ut2004-bin
+    - ut2004-bin-linux-amd64
+    - UT2004.exe
+  13520: # Far Cry
+    - FarCry.exe
+  15100: # Assassin's Creed: Director's Cut Edition
+    - AssassinsCreed_Dx10.exe
+    - AssassinsCreed_Dx9.exe
+  15300: # Tom Clancy's Ghost Recon
+    - GhostRecon.exe
+  17500: # Zombie Panic! Source
+    - zps_linux
+  19900: # Far Cry 2
+    - FarCry2.exe
+    - FC2BenchmarkTool.exe
+    - FC2Editor.exe
+  20500: # Red Faction Guerrilla Steam Edition
+    - RFG.exe
+  20550: # Red Faction II
+    - rf2.exe
+  20900: # The Witcher: Enhanced Edition Director's Cut
+    - witcher.exe
+  20920: # The Witcher 2: Assassins of Kings Enhanced Edition
+    - witcher2
+    - witcher2.exe
+  21090: # F.E.A.R.
+    - FEAR.exe
+    - FEARMP.exe
+    - FEARXP.exe
+    - FEARXP2.exe
+  21660: # Street Fighter IV
+    - SF4Launcher.exe
+    - StreetFighterIV.exe
+  21690: # Resident Evil 5
+    - re5dx9.exe
+  22120: # Penumbra: Black Plague Gold Edition
+    - blackplague
+  22140: # Penumbra: Requiem
+    - requiem
+  22180: # Penumbra Overture
+    - penumbra
+  22320: # The Elder Scrolls III: Morrowind Game of the Year Edition
+    - Morrowind.exe
+  22340: # Call of Cthulhu: Dark Corners of the Earth
+    - CoCMainWin32.exe
+  22370: # Fallout 3: Game of the Year Edition
+    - Fallout3 - Garden of Eden Creation Kit.exe
+    - Fallout3.exe
+  22380: # Fallout: New Vegas
+    - FalloutNV.exe
+  22650: # Alien Breed 2: Assault
+    - AlienBreed2Assault.exe
+    - AlienBreed2AssaultGame
+  24740: # Burnout Paradise: The Ultimate Box
+    - burnoutparadise.exe
+  24880: # The Saboteur
+    - Saboteur.exe
+  24980: # Mass Effect 2 (2010 Edition)
+    - MassEffect2.exe
+  25800: # Europa Universalis III Complete
+    - eu3.exe
+  35140: # Batman: Arkham Asylum Game of the Year Edition
+    - ShippingPC-BmGame.exe
+  35700: # Trine Enchanted Edition
+    - trine1_linux_32bit
+  35720: # Trine 2: Complete Story
+    - trine2_linux_32bit
+  38400: # Fallout: A Post Nuclear Role Playing Game
+    - falloutw.exe
+  38410: # Fallout 2: A Post Nuclear Role Playing Game
+    - FALLOUT2.exe
+    - fallout2.exe
+    - fallout2HR.exe
+    - FalloutClient.exe
+  38430: # Kingpin — Life of Crime
+    - kingpin.exe
+  39150: # FINAL FANTASY VIII
+    - FF8_EN.exe
+  39200: # Dungeon Siege II
+    - DungeonSiege2.exe
+  39210: # FINAL FANTASY XIV Online
+    - ffxiv_dx11.exe
+  39540: # SpellForce - Platinum Edition
+    - SpellForce.exe
+  41070: # Serious Sam 3: BFE
+    - Sam3
+  41500: # Torchlight
+    - Torchlight.exe
+  41700: # S.T.A.L.K.E.R.: Call of Pripyat
+    - xrEngine.exe
+  47810: # Dragon Age: Origins - Ultimate Edition
+    - DAOrigins.exe
+  47890: # The Sims 3
+    - TS3.exe
+    - TS3W.exe
+  48000: # LIMBO
+    - limbo
+  48190: # Assassin’s Creed Brotherhood
+    - ACBMP.exe
+    - ACBSP.exe
+  48700: # Mount & Blade: Warband
+    - mb_warband_linux
+  49520: # Borderlands 2
+    - Borderlands2
+    - Borderlands2.exe
+  55110: # Red Faction: Armageddon
+    - RedFactionArmageddon_DX11.exe
+    - RedFactionArmageddon.exe
+  55230: # Saints Row: The Third
+    - SaintsRowTheThird_DX11.exe
+    - SaintsRowTheThird.exe
+  57300: # Amnesia: The Dark Descent
+    - Amnesia_NOSTEAM.bin.x86
+    - Amnesia_NOSTEAM.bin.x86_64
+    - Amnesia_NoSteam.exe
+    - Amnesia.bin.x86
+    - Amnesia.bin.x86_64
+    - Amnesia.exe
+  58560: # Runaway: A Twist of Fate
+    - RATOF.exe
+  58570: # The Next BIG Thing
+    - The Next Big Thing.exe
+  65560: # Painkiller Redemption
+    - Redemption.exe
+  65790: # ARMA: Cold War Assault
+    - ColdWarAssault.exe
+  65800: # Dungeon Defenders
+    - DunDefGame.exe
+    - DungeonDefenders.exe
+  65980: # Sid Meier's Civilization: Beyond Earth
+    - CivBE
+  70300: # VVVVVV
+    - VVVVVV
+  70600: # Worms Ultimate Mayhem
+    - WormsMayhem.exe
+  70650: # Worms Blast
+    - WormsBlast.exe
+  71250: # Sonic Adventure DX
+    - Sonic Adventure DX.exe
+  71340: # Sonic Generations Collection
+    - SonicGenerations.exe
+  90200: # Farming Simulator 2011
+    - FarmingSimulator2011.exe
+    - FarmingSimulator2011Game.exe
+  96200: # Steel Storm: Burning Retribution
+    - steelstorm64
+  105600: # Terraria
+    - Terraria
+    - Terraria.bin.x86_64
+  107410: # Arma 3
+    - arma3
+    - arma3_x64.exe
+    - arma3.exe
+  108600: # Project Zomboid
+    - ProjectZomboid64
+  110800: # L.A. Noire
+    - LANoire.exe
+  200510: # XCOM: Enemy Unknown
+    - game.x86
+    - game.x86_64
+  200710: # Torchlight II
+    - Torchlight2.bin.x86
+    - Torchlight2.bin.x86_64
+    - Torchlight2.exe
+  200900: # Cave Story+
+    - CaveStory+
+  201870: # Assassin's Creed Revelations
+    - ACRMP.exe
+    - ACRPR.exe
+    - ACRSP.exe
+  202200: # Galactic Civilizations II: Ultimate Edition
+    - GalCiv2.exe
+  202530: # Sonic the Hedgehog 4 - Episode I
+    - Sonic_vis.exe
+    - Sonic_xp.exe
+  202970: # Call of Duty: Black Ops II
+    - t6mp.exe
+    - t6sp.exe
+    - t6zm.exe
+  203160: # Tomb Raider Game of the Year
+    - TombRaider
+    - TombRaider.exe
+  203650: # Sonic the Hedgehog 4 - Episode II
+    - Sonic.exe
+  204100: # Max Payne 3
+    - MaxPayne3.exe
+  205730: # Insanely Twisted Shadow Planet
+    - fcengine-bin32
+  205840: # Yesterday
+    - oalinst.exe
+  206420: # Saints Row IV: Re-Elected
+    - SaintsRow4.i386
+  206760: # Painkiller: Recurring Evil
+    - RecurringEvil.exe
+  207140: # SpeedRunners
+    - SpeedRunners.bin.x86_64
+    - SpeedRunners.exe
+  207320: # Ys: The Oath in Felghana
+    - ysf_win_dx9.exe
+    - ysf_win.exe
+  207350: # Ys Origin
+    - yso_win.exe
+  209000: # Batman: Arkham Origins
+    - BatmanOriginsOnline.exe
+  209730: # R.A.W. Realms of Ancient War
+    - Realms Of Ancient War.exe
+  211500: # RaceRoom Racing Experience
+    - RRRE64.exe
+    - RRREWebBrowser.exe
+  211820: # Starbound
+    - starbound
+  212070: # Star Conflict
+    - StarConflict
+  212480: # Sonic & All-Stars Racing Transformed Collection
+    - ASN_App_PcDx9_Final.exe
+  212500: # The Lord of the Rings Online
+    - lotroclient.exe
+  212630: # Tom Clancy's Ghost Recon: Future Soldier
+    - Future Soldier DX11.exe
+    - Future Soldier DX9.exe
+    - Future Soldier.exe
+  213610: # Sonic Adventure 2
+    - sonic2app.exe
+  214150: # Galactic Civilizations I: Ultimate Edition
+    - GalCiv.exe
+  214490: # Alien: Isolation
+    - AI.exe
+    - AlienIsolation
+  214510: # LEGO The Lord of the Rings
+    - LEGOLOTR.exe
+  214950: # Total War: ROME II - Emperor Edition
+    - Rome2.exe
+  215870: # Dungeon-Party
+    - berkelium.exe
+  216150: # MapleStory
+    - MapleStory.exe
+  219150: # Hotline Miami
+    - Hotline
+  219700: # Dogs of War Online
+    - DogsOfWar_Master.exe
+    - DogsOfWar.exe
+  219990: # Grim Dawn
+    - Grim Dawn.exe
+  220200: # Kerbal Space Program
+    - KSP.x86_64
+  220240: # Far Cry 3
+    - farcry3_d3d11.exe
+    - FarCry3.exe
+    - FC3Editor.exe
+    - FC3UpdaterSteam.exe
+  220260: # Farming Simulator 2013 Titanium Edition
+    - FarmingSimulator2013.exe
+    - FarmingSimulator2013Game.exe
+  221100: # DayZ
+    - DayZ_BE.exe
+    - DayZ_x64.exe
+  221380: # Age of Empires II (Retired)
+    - AoK HD.exe
+  222420: # THE KING OF FIGHTERS '98 ULTIMATE MATCH FINAL EDITION
+    - KingOfFighters98UM.exe
+  222750: # Wargame: Airland Battle
+    - WarGame2.exe
+  222880: # Insurgency
+    - insurgency_linux
+  223470: # POSTAL 2
+    - postal2-bin
+  223810: # Ys I & II Chronicles+
+    - ys1plus.exe
+  225840: # Sven Co-op
+    - svencoop_linux
+  226840: # Age of Wonders III
+    - AoW3
+    - AoW3.exe
+  226860: # Galactic Civilizations III
+    - GalCiv3.exe
+  227300: # Euro Truck Simulator 2
+    - eurotrucks2.exe
+  228280: # Baldur's Gate: Enhanced Edition
+    - BaldursGate
+  230290: # Universe Sandbox
+    - Universe
+    - Universe Sandbox VR.exe
+    - Universe Sandbox x64.exe
+  230410: # Warframe
+    - Warframe.x64.exe
+  230700: # La-Mulana
+    - LaMulana.bin.x86
+  231160: # The Swapper
+    - TheSwapper.bin.x86
+    - TheSwapper.bin.x86_64
+  232750: # Mars: War Logs
+    - MarsWarLogs.exe
+  232770: # POSTAL
+    - postal1
+  233130: # Shadow Warrior
+    - ShadowWarrior.bin.x86
+  233270: # Far Cry 3 - Blood Dragon
+    - fc3_blooddragon_d3d11.exe
+    - fc3_blooddragon.exe
+    - FC3BDUpdaterSteam.exe
+  233550: # Another World – 20th Anniversary Edition
+    - AnotherWorld-amd64
+  233720: # Surgeon Simulator
+    - ss2013.bin
+  233860: # Kenshi
+    - kenshi_x64.exe
+  234080: # Castlevania: Lords of Shadow – Ultimate Edition
+    - CastlevaniaLoSUE.exe
+  235540: # Warhammer: End Times - Vermintide
+    - vermintide.exe
+  235600: # Tom Clancy’s Splinter Cell Blacklist
+    - Blacklist_DX11_game.exe
+    - Blacklist_game.exe
+  235800: # Audiosurf 2
+    - Audiosurf2.x86_64
+  236390: # War Thunder
+    - aces
+  236690: # Blood Bowl 2
+    - BloodBowl2_DX_32.exe
+    - BloodBowl2_GL_32.exe
+    - BloodBowl2.exe
+  236850: # Europa Universalis IV
+    - eu4
+    - eu4.exe
+  236870: # HITMAN
+    - HITMAN.exe
+    - HitmanPro
+  238010: # Deus Ex: Human Revolution - Director's Cut
+    - DXHRDC.exe
+  238210: # System Shock 2 (1999)
+    - SS2.exe
+  238320: # Outlast
+    - OLGame.x86_64
+  238370: # Magicka 2
+    - Magicka2.exe
+  239120: # Final Fantasy III (3D Remake)
+    - FF3_Win32.exe
+  239140: # Dying Light
+    - DyingLightGame
+    - DyingLightGame.exe
+  239160: # Thief
+    - Shipping-ThiefGame.exe
+  239200: # Amnesia: A Machine for Pigs
+    - aamfp_NoSteam.exe
+    - aamfp.exe
+    - AmnesiaAMFP.bin.x86
+    - AmnesiaAMFP.bin.x86_64
+    - Launcher.bin.x86
+    - Launcher.bin.x86_64
+    - Launcher.exe
+  240720: # Getting Over It with Bennett Foddy
+    - GettingOverIt.x86_64
+  240760: # Wasteland 2: Director's Cut
+    - WL2
+  242050: # Assassin’s Creed IV Black Flag
+    - AC4BFMP.exe
+    - AC4BFSP.exe
+  242700: # Injustice: Gods Among Us Ultimate Edition
+    - Injustice.exe
+  243470: # Watch_Dogs
+    - Watch_Dogs.exe
+    - watch_dogs.exe
+  243930: # Bound By Flame
+    - BoundByFlame
+  244160: # Homeworld Remastered Collection
+    - Homeworld.exe
+    - HomeworldRM.exe
+  244210: # Assetto Corsa
+    - acs.exe
+    - AssettoCorsa.exe
+  245620: # Tropico 5
+    - Tropico5
+  246620: # Plague Inc: Evolved
+    - PlagueIncEvolved.exe
+    - PlagueIncEvolved.x86_64
+    - Stranded_Deep
+  247080: # Crypt of the NecroDancer
+    - NecroDancer
+  248820: # Risk of Rain (2013)
+    - Risk of Rain.exe
+    - Risk_of_Rain
+  249130: # LEGO Marvel Super Heroes
+    - LEGOMARVEL.exe
+  249870: # Scribblenauts Unmasked: A DC Comics Adventure
+    - Scribble.exe
+  250760: # Shovel Knight: Treasure Trove
+    - ShovelKnight
+  250900: # The Binding of Isaac: Rebirth
+    - isaac-ng.exe
+    - isaac.i386
+    - isaac.x64
+  251060: # Wargame: Red Dragon
+    - WarGame3.exe
+  251570:
+    - 7DaysToDie_EAC
+    - 7DaysToDie_EAC.exe
+    - 7DaysToDie.exe
+    - 7DaysToDie.x86_64
+  252230: # YAIBA: NINJA GAIDEN Z
+    - NRZGame.exe
+  252490: # Rust
+    - Rust.exe
+    - RustClient.exe
+  252950: # Rocket League
+    - RocketLeague
+  253230: # A Hat in Time
+    - HatinTimeGame.exe
+  255710: # Cities: Skylines
+    - Cities.exe
+    - Cities.x64
+  257350: # Baldur's Gate II: Enhanced Edition
+    - BaldursGateII
+  257850: # Hyper Light Drifter
+    - HyperLightDrifter
+  259130: # Wasteland 1 - The Original Classic
+    - wasteland
+  261640: # Borderlands: The Pre-Sequel
+    - BorderlandsPreSequel
+    - BorderlandsPreSequel.exe
+  262060: # Darkest Dungeon
+    - Darkest.exe
+  262260: # Jets'n'Guns Gold
+    - jng_gold
+  264710: # Subnautica
+    - Subnautica.exe
+  265930: # Goat Simulator
+    - GoatGame
+  266840: # Age of Mythology: Extended Edition
+    - AoMX.exe
+  267530: # The LEGO Movie - Videogame
+    - LEGOEMMET.exe
+  268500: # XCOM 2
+    - XCOM2
+  269190: # Edge Of Eternity
+    - EdgeOfEternity.exe
+  271590: # Grand Theft Auto V Legacy
+    - GTA5.exe
+  272270: # Torment: Tides of Numenera
+    - TidesOfNumenera
+  274170: # Hotline Miami 2: Wrong Number
+    - HotlineMiami2
+  274520: # Darkwood
+    - Darkwood.x86_64
+  275670: # Space Run
+    - oSpaceGameMerged
+  276810: # Mordheim: City of the Damned
+    - mordheim.exe
+  278460: # Skyborn
+    - Skyborn.amd64
+  278810: # LA Cops
+    - lacops.exe
+  278930: # GIGANTIC ARMY
+    - GiganticArmy.x86
+  280180: # Hover
+    - Hover.x86
+  281990: # Stellaris
+    - stellaris
+  282140: # SOMA
+    - Soma_NoSteam.bin.x86_64
+    - Soma.bin.x86_64
+  284160: # BeamNG.drive
+    - BeamNG.drive.x64
+    - BeamNG.drive.x64.exe
+  285160: # LEGO The Hobbit
+    - LEGOHobbit_DX11.exe
+    - LEGOHobbit.exe
+  285310: # RollerCoaster Tycoon: Deluxe
+    - RCT.EXE
+  285330: # RollerCoaster Tycoon 2: Triple Thrill Pack
+    - RCT2.EXE
+  286220: # Pier Solar and the Great Architects
+    - pshd
+  286690: # Metro 2033 Redux
+    - metro.exe
+  287390: # Metro: Last Light Redux
+    - metro
+  287450: # Rise of Nations: Extended Edition
+    - riseofnations.exe
+  287630: # The Council
+    - The Council.exe
+  288470: # Fable Anniversary
+    - Fable Anniversary.exe
+  289070: # Sid Meier’s Civilization VI
+    - Civ6
+  291650: # Pillars of Eternity
+    - PillarsOfEternity
+  292030: # The Witcher 3: Wild Hunt
+    - witcher3.exe
+  292120: # FINAL FANTASY XIII
+    - FFXII_TZA.exe
+  292140: # FINAL FANTASY XIII-2
+    - ffxiii2img.exe
+  293760: # Automation - The Car Company Tycoon Game
+    - AutomationGame-Win64-Shipping.exe
+  294440: # Shadowgate
+    - Shadowgate.x86
+  298030: # Total Annihilation
+    - TAE.EXE
+    - TotalA.exe
+  299950: # GET EVEN
+    - GetEven.exe
+  300550: # Shadowrun: Dragonfall - Director's Cut
+    - Dragonfall
+  301520: # Robocraft
+    - Robocraft.x86_64
+  301640: # Zombie Army Trilogy
+    - ZAT.exe
+  302080: # Bus Driver
+    - busdriver.exe
+  304050: # Trove
+    - Trove.exe
+  304930: # Unturned
+    - Unturned.x86_64
+  305620: # The Long Dark
+    - tld.x86_64
+  306130: # The Elder Scrolls Online
+    - eso64.exe
+    - zosSteamStarter.exe
+  311210: # Call of Duty: Black Ops III
+    - BlackOps3.exe
+  311690: # Enter the Gungeon
+    - EtG.x86_64
+  312520: # Rain World
+    - RainWorld.exe
+  312540: # Ys VI: The Ark of Napishtim
+    - ys6_win_dx9.exe
+    - ys6_win.exe
+  312660: # Sniper Elite 4
+    - SniperElite4_DX11.exe
+    - SniperElite4_DX12.exe
+    - SniperElite4.exe
+  312750: # Final Fantasy IV (3D Remake)
+    - FF4.exe
+  312840: # Fahrenheit: Indigo Prophecy Remastered
+    - Fahrenheit
+  313160: # Farming Simulator 15
+    - FarmingSimulator2015.exe
+    - FarmingSimulator2015Game.exe
+  314650: # SpaceEngine
+    - SpaceEngine.exe
+  315210: # Suicide Squad: Kill the Justice League
+    - SuicideSquad_KTJL.exe
+  316790: # Grim Fandango Remastered
+    - GrimFandango
+  319910: # Trine 3: The Artifacts of Power
+    - trine3_linux_64bit
+  321800: # Icewind Dale: Enhanced Edition
+    - IcewindDale
+  322330: # Don't Starve Together
+    - dontstarve_steam
+    - dontstarve_steam_x64
+  322500: # SUPERHOT
+    - SUPERHOT.x86_64
+  325610: # Total War: ATTILA
+    - Attila
+  327220: # Anna's Quest
+    - anna
+    - anna_64.exe
+    - anna.exe
+    - start
+  330020: # Children of Morta
+    - ChildrenOfMorta
+  330180: # Pix the Cat
+    - PixtheCat
+  330390: # GRANDIA II HD Remaster
+    - grandia2.exe
+  331670: # The Jackbox Party Pack
+    - TJPP1_OpenGL
+    - TJPP1_Vulkan
+  331920: # Airline Tycoon Deluxe
+    - AT.exe
+  332200: # Axiom Verge
+    - AxiomVerge.bin.x86
+    - AxiomVerge.bin.x86_64
+  337000: # Deus Ex: Mankind Divided
+    - DXMD.exe
+  338390: # The Technomancer
+    - TheTechnomancer.exe
+  340170: # FINAL FANTASY TYPE-0 HD
+    - fftype0hd.exe
+  341800: # Keep Talking and Nobody Explodes
+    - ktane.exe
+  341940: # Hatred
+    - Hatred-Linux-Shipping
+  345240: # SHOGUN: Total War - Collection
+    - shogun.exe
+    - ShogunM.exe
+  345260: # Medieval: Total War - Collection
+    - Medieval_TW.exe
+  345660: # RIDE
+    - Ride-Win64-Shipping.exe
+    - Ride.exe
+    - RideX64.exe
+  346830: # FINAL FANTASY IV: THE AFTER YEARS
+    - FF4A.exe
+  346900: # AdVenture Capitalist
+    - adventure-capitalist.x86
+    - adventure-capitalist.x86_64
+  346940: # Shadowrun: Hong Kong - Extended Edition
+    - SRHK
+  351510: # Quiplash
+    - Quiplash_OpenGL
+    - Quiplash_Vulkan
+  352400: # LEGO Jurassic World
+    - LEGOJurassicWorld_DX11.exe
+    - LEGOJurassicWorld.exe
+  355060: # Sébastien Loeb Rally EVO
+    - sbk1-Win64-Shipping.exe
+    - sbk1.exe
+  355180: # Codename CURE
+    - cure_linux
+  356570: # Party Hard
+    - PartyHardGame.x86_64
+  356670: # Spooky's Jump Scare Mansion
+    - SPOOKY.exe
+  359320: # Elite Dangerous
+    - EliteDangerous32.exe
+    - EliteDangerous64.exe
+  359550: # Tom Clancy's Rainbow Six Siege
+    - RainbowSix_BE.exe
+    - RainbowSix.exe
+  359870: # FINAL FANTASY X/X-2 HD Remaster
+    - FFX-2.exe
+    - FFX.exe
+    - "FFX&X-2_Will.exe"
+  360430: # Mafia III: Definitive Edition
+    - Mafia3DefinitiveEdition.exe
+  361300: # Mother Russia Bleeds
+    - Mother Russia Bleeds.x86_64
+  361420: # ASTRONEER
+    - Astro-Win64-Shipping.exe
+  362890: # Black Mesa
+    - bms_linux
+  362960: # Tyranny
+    - Tyranny.x86
+    - Tyranny.x86_64
+  363130: # Toukiden: Kiwami
+    - ToukidenKiwami_en.exe
+    - ToukidenKiwami_ja.exe
+    - ToukidenKiwami_tw.exe
+  363150: # Romance of the Three Kingdoms XIII
+    - San.exe
+    - San13_en.exe
+    - San13_jp.exe
+    - San13_kr.exe
+    - San13_tc.exe
+  363680: # Battlefleet Gothic: Armada
+    - BattleFleetGothic-Win64-Shipping.exe
+    - BattleFleetGothic.exe
+  364360: # Total War: WARHAMMER
+    - TotalWarhammer
+  365590: # Tom Clancy’s The Division
+    - thedivision.exe
+  366320: # Seasons after Fall
+    - Seasons after Fall.exe
+  368260: # Marvel's Midnight Suns
+    - MidnightSuns-Win64-shipping.exe.exe
+    - MidnightSuns.exe
+  368340: # CrossCode
+    - CrossCode
+  368620: # Timespinner
+    - Timespinner
+  370240: # NBA 2K16
+    - NBA2K16.exe
+  370540: # Gary Grigsby's War in the East
+    - WarInTheEast.exe
+  370870: # Dark Future: Blood Red States
+    - DarkFuture-Win64-Shipping.exe
+    - DarkFuture.exe
+  371970: # Barony
+    - barony.x86_64
+  373420: # Divinity: Original Sin - Enhanced Edition
+    - EoCApp
+  375600: # Air Brawl
+    - Air Brawl.x86
+  376210: # The Isle
+    - TheIsle.exe
+    - TheIsleClient-Win64-Shipping.exe
+  377160: # Fallout 4
+    - Fallout4.exe
+  377840: # FINAL FANTASY IX
+    - FF9.exe
+  379720: # DOOM
+    - DOOMx64vk.exe
+  380600: # Fishing Planet
+    - FishingPlanet.X86_64
+  381210: # Dead by Daylight
+    - DeadByDaylight-Win64-Shipping.exe
+    - DeadByDaylight.exe
+  383870: # Firewatch
+    - fw.x86_64
+  385730: # WWE 2K16
+    - WWE2K16_x64.exe
+  386180: # Crossout
+    - Crossout_BE.exe
+    - Crossout-D3D12.exe
+  386360: # SMITE
+    - Smite.exe
+    - SmiteEAC.exe
+  387290: # Ori and the Blind Forest: Definitive Edition
+    - oriDE.exe
+  389430: # Knight Online
+    - KnightOnLine.exe
+  389730: # TEKKEN 7
+    - TEKKEN 7.exe
+    - TekkenGame-Win64-Shipping.exe
+  391220: # Rise of the Tomb Raider
+    - ROTTR.exe
+  391720: # Layers of Fear (2016)
+    - LOF
+  392160: # X4: Foundations
+    - X4
+  393380: # Squad
+    - SquadGame.exe
+  394360: # Hearts of Iron IV
+    - hoi4
+    - hoi4.exe
+  394690: # Tower Unite
+    - Tower-Win64-Shipping.exe
+  397460: # The Jackbox Party Pack 2
+    - TJPP2_OpenGL
+    - TJPP2_Vulkan
+  397950: # Clustertruck
+    - Clustertruck.x86_64
+  400750: # Call to Arms - Gates of Hell: Ostfront
+    - call_to_arms_ed.exe
+    - call_to_arms_server.exe
+    - call_to_arms.exe
+  401360: # The Aquatic Adventure of the Last Human
+    - TheAquaticAdventureOfTheLastHuman
+  401680: # POSTAL Redux
+    - PostalREDUX-Linux-Shipping
+  402430: # Out of the Park Baseball 17
+    - ootp17.exe
+  405310: # LEGO MARVEL's Avengers
+    - LEGOMARVELAvengers_DX11.exe
+    - LEGOMARVELAvengers.exe
+  405820: # Turok
+    - TurokEx
+  405830: # Turok 2: Seeds of Evil
+    - Turok2Ex
+  408410: # X-Morph: Defense
+    - shooter_win64_release.exe
+    - X-Morph_Launcher.exe
+  409710: # BioShock Remastered
+    - BioshockHD.exe
+  409720: # BioShock 2 Remastered
+    - Bioshock2HD.exe
+  410340: # Liftoff: FPV Drone Racing
+    - Liftoff.x86_64
+  410850: # DRAGON QUEST HEROES Slime Edition
+    - DQH.exe
+  412020: # Metro Exodus
+    - MetroExodus.exe
+  413150: # Stardew Valley
+    - Stardew Valley
+  413410: # Danganronpa: Trigger Happy Havoc
+    - DR1_us.exe
+  413420: # Danganronpa 2: Goodbye Despair
+    - DR2_us.exe
+  421020: # DiRT 4
+    - dirt4.exe
+  421170: # Indivisible
+    - Indivisible.x86_64-pc-linux-gnu
+  424840: # Little Nightmares
+    - LittleNightmares.exe
+  427290: # Vampyr
+    - AVGame-Win64-Shipping.exe
+    - Vampyr-Win64-Shipping.exe
+  427520: # Factorio
+    - factorio
+  429660: # Tales of Berseria
+    - Tales of Berseria.exe
+  431240: # Golf With Your Friends
+    - Golf With Your Friends.x86_64
+  433340: # Slime Rancher
+    - SlimeRancher.x86_64
+  434170: # The Jackbox Party Pack 3
+    - TJPP3_OpenGL
+    - TJPP3_Vulkan
+  435150: # Divinity: Original Sin 2 - Definitive Edition
+    - EoCApp.exe
+  438100: # VRChat
+    - VRChat.exe
+  438640: # LEGO STAR WARS: The Force Awakens
+    - LEGOSWTFA_DX11.exe
+    - LEGOSWTFA.exe
+  442070: # Drawful 2
+    - Drawful2_OpenGL
+    - Drawful2_Vulkan
+  447020: # Farming Simulator 17
+    - FarmingSimulator2017.exe
+    - FarmingSimulator2017Game.exe
+  448080: # Fibbage XL
+    - FibbageXL_OpenGL
+    - FibbageXL_Vulkan
+  453090: # Parkitect
+    - Parkitect.x86_64
+  454650: # DRAGON BALL XENOVERSE 2
+    - DBXV2.exe
+  455400: # PAC-MAN 256
+    - PAC-MAN256.exe
+    - PAC-MAN256.x86
+    - PAC-MAN256.x86_64
+  459820: # Crush Crush
+    - CrushCrush
+  463530: # Empires of the Undergrowth
+    - EotU-Win64-Shipping.exe
+    - EotU.exe
+  464060: # RUINER
+    - Ruiner-Linux-Shipping
+  465650: # Out of the Park Baseball 18
+    - ootp18.exe
+  466240: # Deceit
+    - Deceit.exe
+  466300: # Planescape: Torment: Enhanced Edition
+    - Torment
+  470220: # UNO
+    - UbisoftGameLauncher.exe
+    - UNO.exe
+  474210: # BUTCHER
+    - Butcher
+  474220: # Soldat 2
+    - soldat2.exe
+  475150: # Titan Quest Anniversary Edition
+    - TQ.exe
+  477160: # Human Fall Flat
+    - Human.exe
+  485510: # Nioh: Complete Edition
+    - nioh.exe
+  488790: # South Park: The Fractured But Whole
+    - SouthPark_TFBW.exe
+  489830: # The Elder Scrolls V: Skyrim Special Edition
+    - SkyrimSE.exe
+    - TESV.exe
+  491950: # Orwell: Keeping an Eye On You
+    - Orwell.exe
+  492720: # Tropico 6
+    - Tropico6-Linux-Shipping
+  493340: # Planet Coaster
+    - PlanetCoaster.exe
+  493540: # Figment
+    - Figment.x86
+    - Figment.x86_64
+  494840: # UBOAT
+    - UBOAT.exe
+  495280: # Disgaea 2 PC
+    - disgaea2.exe
+    - Disgaea2SteamOS
+  495420: # State of Decay 2: Juggernaut Edition
+    - StateOfDecay2-Win64-Shipping.exe
+    - StateOfDecay2.exe
+  502280: # BERSERK and the Band of the Hawk
+    - BERSERK.exe
+  504230: # Celeste
+    - Celeste.bin.x86_64
+    - Celeste.exe
+  505460: # Foxhole
+    - War-Win64-Shipping.exe
+    - War.exe
+  513710: # SCUM
+    - SCUM.exe
+  517630: # Just Cause 4 Reloaded
+    - JustCause4.exe
+  517790: # Caesar 3
+    - c3.exe
+  517810: # Caesar IV
+    - C4Exec.exe
+    - CaesarIV.exe
+  518790: # theHunter: Call of the Wild
+    - theHunterCotW_F.exe
+  521890: # Hello Neighbor
+    - HelloNeighbor-Win64-Shipping.exe
+    - HelloNeighbor.exe
+    - HelloNeighborReborn-Win64-Shipping.exe
+    - HelloNeighborReborn.exe
+  524220: # NieR:Automata
+    - NierAutomata.exe
+  526870: # Satisfactory
+    - FactoryGame-Win64-Shipping.exe
+    - FactoryGame.exe
+  527290: # Atelier Firis: The Alchemist and the Mysterious Journey / フィリスのアトリエ ～不思議な旅の錬金術士～
+    - A18.exe
+  528230: # SYNTHETIK: Legion Rising
+    - SYNTHETIK.exe
+  529340: # Victoria 3
+    - victoria3
+    - victoria3.exe
+  529490: # Rogue Trooper Redux
+    - RTR_x64.exe
+  530070: # Train Sim World 2020
+    - TS2Prototype-Win64-Shipping.exe
+    - TS2Prototype.exe
+  532270: # Lethal VR
+    - LethalVR-Win64-Shipping.exe
+    - LethalVR.exe
+  534380: # Dying Light 2 Stay Human: Reloaded Edition
+    - DyingLightGame_x64_rwdi.exe
+  536270: # Ancestors: The Humankind Odyssey
+    - Ancestors-Win64-Shipping.exe
+  538680: # The Legend of Heroes: Trails of Cold Steel
+    - ed8.exe
+    - ed8jp.exe
+  544750: # SOULCALIBUR VI
+    - SoulcaliburVI.exe
+  544810: # KARDS - The WWII Card Game
+    - kards-Win64-Shipping.exe
+    - kards.exe
+  546560: # Half-Life: Alyx
+    - hlvr
+    - hlvr.exe
+  548430: # Deep Rock Galactic
+    - FSD-Win64-Shipping.exe
+    - FSD.exe
+  548570: # RAGE 2
+    - RAGE2.exe
+  550650:
+    - BlackSquadGame.exe
+  551730: # Toukiden 2
+    - Toukiden2_EN.exe
+    - Toukiden2_JA.exe
+  552100: # Brick Rigs
+    - BrickRigs.exe
+    - BrickRigsSteam-Win64-Shipping.exe
+  552500: # Warhammer: Vermintide 2
+    - vermintide2_dx12.exe
+    - vermintide2.exe
+  552520: # Far Cry 5
+    - FarCry5.exe
+  552700: # WORLD OF FINAL FANTASY
+    - WOFF.exe
+  553850: # HELLDIVERS 2
+    - helldivers2.exe
+  558260: # Gravel
+    - gravel.x86_64
+  558990: # Opus Magnum
+    - Lightning.bin.x86
+    - Lightning.bin.x86_64
+  559210: # Rakuen
+    - Rakuen.amd64
+  560130: # Pillars of Eternity II: Deadfire
+    - PillarsOfEternityII
+  561600: # MXGP3 - The Official Motocross Videogame
+    - mxgp3-Win64-Shipping.exe
+    - mxgp3.exe
+  562860: # Ion Fury
+    - fury.bin
+  564310: # Serious Sam Fusion 2017 (beta)
+    - Sam2017
+  567640: # Danganronpa V3: Killing Harmony
+    - Dangan3Win.exe
+  570940: # DARK SOULS: REMASTERED
+    - DarkSoulsRemastered.exe
+  571740: # Golf It!
+    - GolfIt-Win64-Shipping.exe
+    - GolfIt.exe
+  573090: # Stormworks: Build and Rescue
+    - stormworks64.exe
+  573100: # Battlefleet Gothic: Armada 2
+    - BattlefleetGothic2.exe
+  574050: # DRAGON QUEST HEROES II
+    - DQH2.exe
+  578080: # PUBG: BATTLEGROUNDS
+    - TslGame_BE.exe
+    - TslGame_ZK.exe
+    - TslGame.exe
+  578650: # The Outer Worlds
+    - Indiana-Win64-Shipping.exe
+    - TheOuterWorlds.exe
+  581320: # Insurgency: Sandstorm
+    - Insurgency.exe
+    - InsurgencyClient-Win64-Shipping.exe
+    - InsurgencyEAC.exe
+  582660: # Black Desert
+    - blackdesert64.exe
+  587100: # Ys SEVEN
+    - Ys7.exe
+  587110: # Ys: Memories of Celceta
+    - Ysc_dx11.exe
+  588650: # Dead Cells
+    - deadcells
+  594570: # Total War: WARHAMMER II
+    - TotalWarhammer2
+  594650: # Hunt: Showdown 1896
+    - hunt.exe
+    - HuntGame.exe
+  595520: # FINAL FANTASY XII THE ZODIAC AGE
+    - ffxiiiimg.exe
+  598550: # HUNTDOWN
+    - Huntdown.x86_64
+  599140: # Graveyard Keeper
+    - Graveyard Keeper.x86_64
+  600480: # Megaquarium
+    - Megaquarium.exe
+  601050: # Attack on Titan 2 - A.O.T.2
+    - AOT2_AS.exe
+    - AOT2_EU.exe
+    - AOT2_JP.exe
+  601510: # Yu-Gi-Oh! Duel Links
+    - dlpc.exe
+    - DuelLinksTakeOver.exe
+  602960: # Barotrauma
+    - Barotrauma
+  603850: # Age of History II
+    - AoC2_Old.exe
+    - AoC2.exe
+    - AoC2.jar
+  606150: # Moonlighter
+    - Moonlighter.exe
+  606880: # GreedFall
+    - GreedFall.exe
+  607080: # Psychonauts 2
+    - Psychonauts2-Win64-Shipping.exe
+    - Psychonauts2.exe
+  607260: # McOsu
+    - McEngine
+  607880: # Accel World VS. Sword Art Online Deluxe Edition
+    - AWVSSAO.exe
+  609150: # STAR OCEAN - THE LAST HOPE - 4K & Full HD Remaster
+    - StarOceanTheLastHope.exe
+  610180: # The Jackbox Party Pack 4
+    - TJPP4_OpenGL
+    - TJPP4_Vulkan
+  617290: # Remnant: From the Ashes
+    - Remnant-Win64-Shipping.exe
+    - Remnant.exe
+  617480: # Tower of Time
+    - TowerOfTime.x86
+    - TowerOfTime.x86_64
+  617830: # SUPERHOT VR
+    - SUPERHOTVR.exe
+  626690: # Sword Art Online: Fatal Bullet
+    - SAOFB-Win64-Shipping.exe
+    - SAOFB.exe
+  632470: # Disco Elysium - The Final Cut
+    - disco.exe
+  636480: # Ravenfield
+    - ravenfield.x86_64
+  637090: # BATTLETECH
+    - BattleTech.exe
+  637650: # FINAL FANTASY XV WINDOWS EDITION
+    - ffxv_s.exe
+  638490: # Soldat
+    - soldat.exe
+  643880: # Strikey Sisters
+    - runner
+  644830: # The Surge 2
+    - TheSurge2.exe
+  646570: # Slay the Spire
+    - SlayTheSpire
+  647830: # LEGO Marvel Super Heroes 2
+    - LEGOMARVEL2_DX11.exe
+    - LEGOMARVEL2.exe
+  648350: # Jurassic World Evolution
+    - JWE.exe
+  655500: # MX Bikes
+    - MxGame2021-Win64-Shipping.exe
+    - MxGame2021.exe
+  658260: # BLUE REFLECTION
+    - BLUE_REFLECTION.exe
+  668580: # Atomic Heart
+    - AtomicHeart-Win64-Shipping.exe
+    - AtomicHeart.exe
+  671860: # BattleBit Remastered
+    - BattleBit.exe
+    - BattleBitEAC.exe
+  673130: # AMID EVIL
+    - AmidEvil.exe
+  674020: # World War 3
+    - WW3_Launcher.exe
+    - WW3_Win64-Shipping.exe
+  677120: # Heroes of Hammerwatch
+    - HWR
+  677620: # Splitgate: Arena Warfare
+    - PortalWars-Linux-Shipping
+    - PortalWars-Win64-Shipping.exe
+  678960: # CODE VEIN
+    - CodeVein-Win64-Shipping.exe
+    - CodeVein.exe
+  679110: # Werewolf: The Apocalypse - Earthblood
+    - WW-Win64-Shipping.exe
+    - WW.exe
+  681280: # Descenders
+    - Descenders.x86_64
+  686810: # Hell Let Loose
+    - HLL-Win64-Shipping.exe
+  690040: # SUPERHOT: MIND CONTROL DELETE
+    - SUPERHOTMCD.x86_64
+  690790: # DiRT Rally 2.0
+    - dirtrally2.exe
+  692850: # Bloodstained: Ritual of the Night
+    - BloodstainedRotN-Win64-Shipping.exe
+    - BloodstainedRotN.exe
+  692890: # Roboquest
+    - RoboQuest-Win64-Shipping.exe
+    - RoboQuest.exe
+  694280: # Zombie Army 4: Dead War
+    - za4_dx12.exe
+    - za4_vulkan.exe
+  698670: # Scorn
+    - Scorn-Win64-Shipping.exe
+    - Scorn.exe
+  699130: # World War Z
+    - wwzRetail.exe
+  701160: # Kingdom Two Crowns
+    - KingdomTwoCrowns.x86
+  702320: # March of Empires
+    - MOE-Win64-Shipping.exe
+    - MOE.exe
+  703080: # Planet Zoo
+    - PlanetZoo.exe
+  704270: # Generation Zero
+    - GenerationZero_F.exe
+  704450: # Neverwinter Nights: Enhanced Edition
+    - nwmain-linux
+  711750: # Monster Energy Supercross - The Official Videogame
+    - supercross-Win64-Shipping.exe
+    - supercross.exe
+  712100: # A Total War Saga: THRONES OF BRITANNIA
+    - launcher.exe
+    - Thrones.exe
+    - ThronesOfBritannia
+    - ThronesOfBritannia.sh
+  714080: # BLACK CLOVER: QUARTET KNIGHTS
+    - QuartetKnights.exe
+  719040: # Wasteland 3
+    - WL3.exe
+  722560: # RAD
+    - Mutant.exe
+    - RAD.exe
+  726590: # NBA 2K Playgrounds 2
+    - NBAPlaygrounds2-Win64-Shipping.exe
+    - NBAPlaygrounds2.exe
+  728880: # Overcooked! 2
+    - Overcooked2.x86
+    - "Overcooked2.x86_64 "
+  729040: # Borderlands Game of the Year Enhanced
+    - BorderlandsGOTY.exe
+  730310: # DYNASTY WARRIORS 9
+    - DW9.exe
+  732690: # FIVE NIGHTS AT FREDDY'S: HELP WANTED
+    - freddys-Win64-Shipping.exe
+    - freddys.exe
+  735580: # 11-11 Memories Retold
+    - 11-11 Memories Retold.exe
+  736220: # Squad 44
+    - PostScriptum.exe
+  736260: # Baba Is You
+    - Chowdren
+  738540: # Tales of Vesperia: Definitive Edition
+    - TOV_DE.exe
+  741670: # Easy Red
+    - EasyRedLinux
+  747660: # Five Nights at Freddy's: Security Breach
+    - fnaf9-Win64-Shipping.exe
+    - fnaf9.exe
+  750130: # The Sinking City Remastered
+    - TheSinkingCityRemastered.exe
+    - TSCGame-Win64-Shipping.exe
+  750920: # Shadow of the Tomb Raider: Definitive Edition
+    - ShadowOfTheTombRaider
+    - SOTTR.exe
+  752590: # A Plague Tale: Innocence
+    - APlagueTaleInnocence_x64.exe
+  753650: # Due Process
+    - DueProcess.exe
+  757310: # Sable
+    - Seble.exe
+  758330: # Shenmue I & II
+    - Shenmue.exe
+    - Shenmue2.exe
+  759740: # RIDE 3
+    - ride3-Win64-Shipping.exe
+    - ride3.exe
+  761890: # Albion Online
+    - Albion-Online
+    - Albion-Online_BE.exe
+    - Albion-Online.exe
+  766570: # Russian Fishing 4
+    - rf4_x64.exe
+  774241: # Warhammer: Chaosbane
+    - Chaosbane.exe
+  774461: # The Jackbox Party Pack 5
+    - TJPP5_OpenGL
+    - TJPP5_Vulkan
+  775500: # SCARLET NEXUS
+    - ScarletNexus-Win64-Shipping.exe
+    - ScarletNexus.exe
+  775900: # MotoGP18
+    - motogp18-Win64-Shipping.exe
+    - motogp18.exe
+  779340: # Total War: THREE KINGDOMS
+    - Three_Kingdoms.exe
+    - ThreeKingdoms
+    - ThreeKingdoms.sh
+  780310: # The Riftbreaker
+    - riftbreaker_win_release.exe
+  782330: # DOOM Eternal
+    - DOOMEternalx64vk.exe
+    - DOOMx64.exe
+  784080: # MechWarrior 5: Mercenaries
+    - MechWarrior-Win64-Shipping.exe
+    - MechWarrior.exe
+  784150: # Workers & Resources: Soviet Republic
+    - SOVIET.exe
+    - SOVIET64.exe
+  787860: # Farming Simulator 19
+    - FarmingSimulator2019.exe
+    - FarmingSimulator2019Game.exe
+  794260: # Outward Definitive Edition
+    - Outward.exe
+  798290: # MXGP PRO
+    - mxgp4-Win64-Shipping.exe
+    - mxgp4.exe
+  798510: # SUPER DRAGON BALL HEROES WORLD MISSION
+    - SDBHeroes_WorldMission.exe
+  801550: # VAIL VR
+    - VAIL.exe
+  801800: # Atomfall
+    - Atomfall_dx12.exe
+    - Atomfall.exe
+  805550: # Assetto Corsa Competizione
+    - AC2-Win64-Shipping.exe
+  814380: # Sekiro: Shadows Die Twice - GOTY Edition
+    - sekiro.exe
+  816090: # Space Hulk: Deathwing Enhanced Edition
+    - SpaceHulkGame-Win64-Shipping.exe
+    - SpaceHulkGame.exe
+  823130: # Totally Accurate Battlegrounds
+    - TotallyAccurateBattlegrounds.exe
+  824270: # KovaaK's
+    - FPSAimTrainer-Win64-Shipping.exe
+    - FPSAimTrainer.exe
+  835960: # The Talos Principle 2
+    - Talos2-Win64-Shipping.exe
+    - Talos2.exe
+  841370: # NBA 2K19
+    - NBA2K19.exe
+  844870: # KurtzPel
+    - TheChase-Win64-Shipping.exe
+    - TheChase.exe
+  848450: # Subnautica: Below Zero
+    - SubnauticaZero.exe
+  850190: # Goat Simulator 3
+    - Goat2-Win64-Shipping.exe
+    - Goat2.exe
+  851850: # DRAGON BALL Z: KAKAROT
+    - AT-Win64-Shipping.exe
+  860510: # Little Nightmares II
+    - Little Nightmares II.exe
+  861650: # Session: Skate Sim
+    - SessionGame-Win64-Shipping.exe
+    - SessionGame.exe
+  863550: # HITMAN 2
+    - HITMAN2.exe
+  868520: # killer7
+    - Killer7Win.exe
+  870780: # Control Ultimate Edition
+    - Control_DX11.exe
+    - Control.exe
+  872410: # ROMANCE OF THE THREE KINGDOMS XIV
+    - SAN14_KO.exe
+    - SAN14_SC.exe
+    - SAN14_TC.exe
+    - SAN14.exe
+  877200: # Zero Caliber VR
+    - ZeroCaliber-Win64-Shipping.exe
+    - ZeroCaliber.exe
+  878670: # Shenmue III
+    - Shenmue3-Win64-Shipping.exe
+    - Shenmue3.exe
+  881020: # Granblue Fantasy: Relink
+    - granblue_fantasy_relink.exe
+  882020: # Monster Energy Supercross - The Official Videogame 2
+    - supercross2-Win64-Shipping.exe
+    - supercross2.exe
+  883360: # Beyond Blue
+    - Beyond Blue.exe
+  885970: # Total War: ROME REMASTERED
+    - Rome
+    - Total War ROME REMASTERED.sh
+  892970: # Valheim
+    - Valheim.exe
+  895870: # Project Wingman
+    - ProjectWingman-Win64-Shipping.exe
+    - ProjectWingman.exe
+  899770: # Last Epoch
+    - Last Epoch.exe
+  909660: # Vagrus - The Riven Realms
+    - Vagrus.x86_64
+  911400: # Assassin's Creed III Remastered
+    - AC3MP.exe
+    - AC3SP.exe
+  916440: # Anno 1800
+    - Anno1800_plus.exe
+    - Anno1800.exe
+  918570: # Century: Age of Ashes
+    - Century-Win64-Shipping.exe
+  921570: # OCTOPATH TRAVELER
+    - Octopath_Traveler-Win64-Shipping.exe
+    - Octopath_Traveler.exe
+  922400: # DX-Ball 2: 20th Anniversary Edition
+    - DXBall2.exe
+  924970: # Back 4 Blood
+    - Back4Blood.exe
+  927380: # Yakuza Kiwami 2
+    - YakuzaKiwami2.exe
+  934700: # Dead Island 2
+    - DeadIsland-Win64-Shipping.exe
+    - DeadIsland.exe
+  936160: # Atelier Rorona ~The Alchemist of Arland~ DX
+    - A11R_x64_Release_en.exe
+    - A11R_x64_Release.exe
+  938220: # TAPSONIC BOLD
+    - BOLD.exe
+  949230: # Cities: Skylines II
+    - Cities2.exe
+  960990: # Beyond: Two Souls
+    - BeyondTwoSouls_
+  961200: # Predecessor
+    - PredecessorClient-Win64-Shipping.exe
+  962130: # Grounded
+    - Grounded.exe
+    - Maine-Win64-Shipping.exe
+  963450: # The Eternal Castle [REMASTERED]
+    - TheEternalCastle
+  968790: # DYNASTY WARRIORS 7: Xtreme Legends Definitive Edition
+    - SM6EN.exe
+    - SM6JP.exe
+  976310: # Mortal Kombat 11
+    - MK11_DX12.exe
+    - MK11.exe
+  976730: # Halo: The Master Chief Collection
+    - MCC-Win64-Shipping.exe
+    - mcclauncher.exe
+  979110: # Space Haven
+    - spacehaven
+  979920: # Supremacy 1914: World War 1
+    - Squirrel.exe
+    - Supremacy 1914.exe
+  984780: # MotoGP19
+    - motogp19-Win64-Shipping.exe
+    - motogp19.exe
+  985890: # Streets of Rage 4
+    - SOR4
+  990080: # Hogwarts Legacy
+    - HogwartsLegacy.exe
+  991560: # ONE PUNCH MAN: A HERO NOBODY KNOWS
+    - ONE PUNCH MAN A HERO NOBODY KNOWS.exe
+    - OPM.exe
+  996580: # Spyro Reignited Trilogy
+    - Spyro-Win64-Shipping.exe
+    - Spyro.exe
+  997010: # Police Simulator: Patrol Officers
+    - Boston-Win64-Shipping.exe
+    - Boston.exe
+  999220: # Amnesia: Rebirth
+    - Amnesia2_NoSteam.bin.x86_64
+    - Amnesia2.bin.x86_64
+    - AmnesiaRebirth_NoSteam.exe
+    - AmnesiaRebirth.exe
+  1000410: # WRATH: Aeon of Ruin
+    - wrath-sdl.exe
+    - wrath.exe
+  1005300: # The Jackbox Party Pack 6
+    - TJPP6_OpenGL
+    - TJPP6_Vulkan
+  1009290: # SWORD ART ONLINE Alicization Lycoris
+    - sao_al.exe
+  1011670: # Totally Reliable Delivery Service
+    - Totally Reliable Delivery Service.exe
+  1012110: # Military Conflict: Vietnam
+    - mcv_linux64
+  1012790: # Into the Radius VR
+    - IntoTheRadius-Win64-Shipping.exe
+    - IntoTheRadius.exe
+  1016800: # Chernobylite Complete Edition
+    - ChernobylGame.exe
+  1016950: # Blood Bowl 3
+    - BB3-Win64-Shipping.exe
+    - BB3.exe
+  1017900: # Age of Empires: Definitive Edition
+    - AoEDE_s.exe
+  1018160: # MXGP 2019 - The Official Motocross Videogame
+    - mxgp5-Win64-Shipping.exe
+    - mxgp5.exe
+  1026680: # FINAL FANTASY VIII - REMASTERED
+    - ff7_en.exe
+  1029210: # 30XX
+    - 30XX.exe
+    - Editor30XX.exe
+  1029690: # Sniper Elite 5
+    - sniper5_dx12.exe
+    - sniper5_vulkan.exe
+  1030210: # Torchlight III
+    - Frontiers-Win64-Shipping.exe
+    - Frontiers.exe
+  1030830: # Mafia II: Definitive Edition
+    - Mafia II Definitive Edition.exe
+  1030840: # Mafia: Definitive Edition
+    - mafiadefinitiveedition.exe
+  1034860: # GRANDIA HD Remaster
+    - grandia.exe
+  1038250: # DIRT 5
+    - DIRT5.exe
+  1041720: # Kingdoms of Amalur: Re-Reckoning
+    - koa.exe
+  1051690: # Nightmare Reaper
+    - MyProject-Win64-Shipping.exe
+  1056640: # Phantasy Star Online 2
+    - pso2.exe
+  1058650: # Beyond The Wire
+    - WireGame.exe
+  1063730: # New World: Aeternum
+    - NewWorld.exe
+  1065310: # Evil West
+    - EvilWest.exe
+    - HighMoon-Win64-Shipping.exe
+  1066780: # Transport Fever 2
+    - TransportFever2
+    - TransportFever2.exe
+  1066890: # Automobilista 2
+    - AMS2.exe
+    - AMS2AVX.exe
+  1072420: # DRAGON QUEST BUILDERS 2
+    - DQB2_AS.exe
+    - DQB2_EU.exe
+    - DQB2.exe
+  1076200: # Roguebook
+    - Roguebook.exe
+  1085660: # Destiny 2
+    - destiny2.exe
+  1086940: # Baldur's Gate 3
+    - bg3_dx11.exe
+    - bg3.exe
+  1089830: # Monster Energy Supercross - The Official Videogame 3
+    - supercross3-Win64-Shipping.exe
+    - supercross3.exe
+  1090630: # Granblue Fantasy: Versus
+    - GBVS-Win64-Shipping.exe
+    - GBVS.exe
+  1091500: # Cyberpunk 2077
+    - Cyberpunk2077.exe
+  1092790: # Inscryption
+    - Inscryption.exe
+  1097150: # Fall Guys: Ultimate Knockout
+    - FallGuys_client_game.exe
+    - FallGuys_client.exe
+  1097840: # Gears 5
+    - Gears5_EAC.exe
+    - Gears5.exe
+  1099410: # A Total War Saga: TROY
+    - Troy.exe
+  1105510: # Yakuza 5 Remastered
+    - Yakuza5.exe
+  1106840: # Hydroneer
+    - Mining-Win64-Shipping.exe
+    - Mining.exe
+  1110910: # Mortal Shell
+    - Dungeonhaven-Win64-Shipping.exe
+    - Dungeonhaven.exe
+  1114150: # CarX Street
+    - CarX_Street.x86_64
+  1116580: # Shady Part of Me
+    - spom.exe
+  1121640: # The Wandering Village
+    - WanderingVillage.x86_64
+  1127400: # Mindustry
+    - Mindustry.exe
+  1129580: # Medieval Dynasty
+    - Medieval_Dynasty-Win64-Shipping.exe
+    - Medieval_Dynasty.exe
+  1139900: # Ghostrunner
+    - Ghostrunner-Win64-Shipping.exe
+    - Ghostrunner.exe
+  1142710: # Total War: WARHAMMER III
+    - TotalWarhammer3
+    - Warhammer3.exe
+  1144200: # Ready or Not
+    - ReadyOrNot.exe
+    - ReadyOrNotSteam-Win64-Shipping.exe
+  1147560: # Skul: The Hero Slayer
+    - Skul.exe
+  1149460: # ICARUS
+    - Icarus-Win64-Shipping.exe
+    - Icarus.exe
+  1149620: # Gas Station Simulator
+    - GSS2-Win64-Shipping.exe
+    - GSS2.exe
+  1150440: # Aliens: Dark Descent
+    - AliensDarkDescentGameSteam-Win64-Shipping.exe
+  1151640: # Horizon Zero Dawn Complete Edition
+    - HorizonZeroDawn.exe
+  1161490: # MotoGP20
+    - motogp20-Win64-Shipping.exe
+    - motogp20.exe
+  1162750: # Songs of Syx
+    - songsofsyx
+  1167630: # Teardown
+    - teardown_modtest.exe
+    - teardown.exe
+  1172380:
+    - starwarsjedifallenorder.exe
+  1172470: # Apex Legends
+    - r5apex_dx12.exe
+    - r5apex.exe
+  1172620: # Sea of Thieves: 2025 Edition
+    - SeaOfThieves.exe
+    - SoTGame.exe
+  1173220: # Bleak Faith: Forsaken
+    - Forsaken-Win64-Shipping.exe
+    - Forsaken.exe
+  1174180: # Red Dead Redemption 2
+    - RDR2.exe
+  1178490: # 港詭實錄ParanormalHK
+    - PuzzleGame-Win64-Shipping.exe
+    - PuzzleGame.exe
+  1182900: # A Plague Tale: Requiem
+    - APlagueTaleRequiem_x64.exe
+  1205520: # Pentiment
+    - Pentiment.exe
+  1205970: # MX vs ATV Legends
+    - mxbikes.exe
+  1206560: # WorldBox - God Simulator
+    - worldbox
+  1211630: # The Jackbox Party Pack 7
+    - TJPP7_OpenGL
+    - TJPP7_Vulkan
+  1213210: # Command & Conquer Remastered Collection
+    - ClientG.exe
+  1214470: # Hotel Renovator
+    - Hotel_Renovator-Win64-Shipping.exe
+    - Hotel_Renovator.exe
+  1214650: # SOUTH PARK: SNOW DAY!
+    - SnowDay-Win64-Shipping.exe
+    - SnowDay.exe
+  1222140: # Detroit: Become Human
+    - DetroitBecomeHu
+  1222700: # A Way Out
+    - AWayOut_friend.exe
+    - AWayOut.exe
+  1225330: # NBA 2K21
+    - NBA2K21.exe
+  1229240: # Chained Echoes
+    - Chained_Echoes.x86_64
+  1230530: # Atlas Fallen: Reign Of Sand
+    - AtlasFallen (DirectX 12).exe
+    - AtlasFallen (DX12).exe
+    - AtlasFallen (VK).exe
+    - AtlasFallen.exe
+  1233570:
+    - MirrorsEdgeCatalyst.exe
+  1234430: # Ad Infinitum
+    - AdInfinitum-Win64-Shipping.exe
+    - AdInfinitum.exe
+  1235140: # Yakuza: Like a Dragon
+    - YakuzaLikeADragon.exe
+  1237320: # Sonic Frontiers
+    - SonicFrontiers.exe
+  1238020: # Mass Effect 3 N7 Digital Deluxe Edition (2012)
+    - MassEffect3.exe
+  1238060:
+    - deadspace3.exe
+  1238860:
+    - bf4.exe
+  1240440: # Halo Infinite
+    - HaloInfinite.exe
+  1241100: # POLYGON: Multiplayer Shooter
+    - POLYGON-Win64-Shipping.exe
+  1244460: # Jurassic World Evolution 2
+    - JWE2.exe
+  1245620: # ELDEN RING
+    - eldenring.exe
+  1248130: # Farming Simulator 22
+    - FarmingSimulator2022.exe
+    - FarmingSimulator2022Game.exe
+  1249970: # Test Drive Unlimited Solar Crown
+    - TDUSC.exe
+  1252330: # DEATHLOOP
+    - Deathloop.exe
+  1259980: # RIDE 4
+    - ride4-Win64-Shipping.exe
+    - ride4.exe
+  1265920: # Life is Strange Remastered
+    - LiS-Win64-Shipping.exe
+    - LiS.exe
+  1267910: # Melvor Idle
+    - Melvor Idle
+  1268750: # Starship Troopers: Extermination
+    - Yakisoba-Win64-Shipping.exe
+    - Yakisoba.exe
+  1271700: # HOT WHEELS UNLEASHED
+    - hotwheels-Win64-Shipping.exe
+    - hotwheels.exe
+  1272080: # PAYDAY 3
+    - PAYDAY3Client-Win64-Shipping.exe
+    - PAYDAY3Client.exe
+  1276760: # DRAGON BALL: THE BREAKERS
+    - DRAGON BALL THE BREAKERS.exe
+  1281630: # Anno 1404 - History Edition
+    - Anno1404.exe
+  1282100: # REMNANT II
+    - Remnant2-Win64-Shipping.exe
+    - Remnant2.exe
+  1283400: # Steelrising
+    - Steelrising.exe
+  1286350: # BPM: BULLETS PER MINUTE
+    - BPMGame-Win64-Shipping.exe
+    - BPMGame.exe
+  1286830: # STAR WARS: The Old Republic
+    - swtor.exe
+  1288320: # Way of the Hunter
+    - WayOfTheHunter-Win64-Shipping.exe
+    - WayOfTheHunter.exe
+  1288610: # Wildcat Gun Machine
+    - Wildcat Gun Machine.exe
+  1293160: # The Medium
+    - Medium-Win64-Shipping.exe
+    - Medium.exe
+  1293830: # Forza Horizon 4
+    - ForzaHorizon4.exe
+  1294810: # Redfall
+    - Redfall.exe
+  1295500: # Warhammer 40,000: Battlesector
+    - Warhammer 40K Battlesector.exe
+  1295510: # DRAGON QUEST XI S: Echoes of an Elusive Age - Definitive Edition
+    - DRAGON QUEST XI S.exe
+  1295660: # Sid Meier's Civilization VII
+    - Civ7_linux_Vulkan_FinalRelease
+  1298140: # Fobia - St. Dinfna Hotel
+    - Fobia-Win64-Shipping.exe
+    - Fobia.exe
+  1299460: # Wanderstop
+    - clearing-Win64-Shipping.exe
+    - clearing.exe
+  1304930: # The Outlast Trials
+    - TOTClient-Win64-Shipping.exe
+    - TOTClient.exe
+  1310410: # Alone in the Dark
+    - AloneInTheDark-Win64-Shipping.exe
+    - AloneInTheDark.exe
+  1321680: # Hello Neighbor 2
+    - HelloNeighbor2-Win64-Shipping.exe
+    - HelloNeighbor2.exe
+  1324780: # Easy Red 2
+    - Easy Red 2.x86_64
+  1328670:
+    - MassEffect1.exe
+  1341200: # DYNASTY WARRIORS 9 Empires
+    - DW9Emp.exe
+  1343370: # Old School RuneScape
+    - osclient.exe
+  1345890: # Deliver Us Mars
+    - DeliverUsMars-Win64-Shipping.exe
+    - DeliverUsMars.exe
+  1351240: # Taxi Life: A City Driving Simulator
+    - TaxiLife-Win64-Shipping.exe
+    - TaxiLife.exe
+  1357210: # Galactic Civilizations IV
+    - GalCiv4.exe
+  1361210: # Warhammer 40,000: Darktide
+    - Darktide.exe
+  1363080: # Manor Lords
+    - ManorLords-Win64-Shipping.exe
+    - ManorLords.exe
+  1369630: # ENDER LILIES: Quietus of the Knights
+    - EnderLilies.exe
+    - EnderLiliesSteam-Linux-Shipping
+    - EnderLiliesSteam-Win64-Shipping.exe
+  1372110: # JoJo's Bizarre Adventure: All-Star Battle R
+    - ASB.exe
+    - ASBR.exe
+  1373510: # BloodRayne: Terminal Cut
+    - rayne1.exe
+  1373550: # BloodRayne 2: Terminal Cut
+    - rayne2.exe
+  1373960: # INDIKA
+    - Indika-Win64-Shipping.exe
+    - Indika.exe
+  1374490: # RuneScape: Dragonwilds
+    - RSDragonwilds-Win64-Shipping.exe
+    - RSDragonwilds.exe
+  1377580: # Soulworker
+    - SoulWorker.exe
+  1382070: # Viewfinder
+    - Viewfinder.exe
+  1385380: # Across the Obelisk
+    - AcrossTheObelisk.exe
+    - AcrossTheObelisk.x86_64
+    - dowser
+  1388880: # Doki Doki Literature Club Plus!
+    - Doki Doki Literature Club Plus.exe
+  1426450: # Age of Darkness: Final Stand
+    - Achilles-Win64-Shipping.exe
+    - Achilles.exe
+  1430680: # Clash: Artifacts of Chaos
+    - Clash-Win64-Shipping.exe
+    - Clash.exe
+  1435790: # Escape Simulator
+    - Escape Simulator.exe
+  1440440: # Sam & Max Save the World
+    - SamMax100.exe
+  1446650: # BRAVELY DEFAULT II
+    - Bravely_Default_II-Win64-shipping.exe
+    - Bravely_Default_II.exe
+  1447000: # MotoGP21
+    - motogp21-Win64-Shipping.exe
+    - motogp21.exe
+  1450900: # Desynced
+    - Desynced.exe
+  1455660: # Out of the Park Baseball 22
+    - ootp22.exe
+  1458140: # Pacific Drive
+    - PenDriverPro-Win64-Shipping.exe
+    - PenDriverPro.exe
+  1462040: # FINAL FANTASY VII REMAKE INTERGRADE
+    - ff7remake_.exe
+    - ff7remake.exe
+  1465460: # Infection Free Zone
+    - Infection Free Zone.exe
+  1466860: # Age of Empires IV: Anniversary Edition
+    - RelicCardinal.exe
+  1469610: # Last Train Home
+    - Train-Win64-Shipping.exe
+    - Train.exe
+  1475810: # Ghostwire: Tokyo
+    - GWT.exe
+  1477940: # Unknown 9: Awakening
+    - U9-Win64-Shipping.exe
+    - Unknown 9 Awakening.exe
+  1486920: # Tempest Rising
+    - Tempest-Win64-Shipping.exe
+    - Tempest.exe
+  1489970: # Highrise City
+    - CityNext-Win64-Shipping.exe
+    - HighriseCity.exe
+  1493640: # Banishers: Ghosts of New Eden
+    - Banishers-Win64-Shipping.exe
+  1493750: # Evil Dead: The Game
+    - EvilDead-Win64-Shipping.exe
+    - EvilDead.exe
+  1496790: # Gotham Knights
+    - GothamKnights.exe
+  1501750: # Lords of the Fallen
+    - LOTF2-Win64-Shipping.exe
+    - LOTF2.exe
+  1502980: # Atelier Firis: The Alchemist and the Mysterious Journey DX
+    - Atelier_Firis_DX.exe
+  1532690: # BLACKTAIL
+    - BLACKTAIL-Win64-Shipping.exe
+    - BLACKTAIL.exe
+  1544020: # The Callisto Protocol
+    - TheCallistoProt
+    - TheCallistoProtocol-Win64-Shipping.exe
+    - TheCallistoProtocol.exe
+  1545560: # Shadow Gambit: The Cursed Crew
+    - ShadowGambit_TCC.exe
+  1546320: # Your Chronicle
+    - YourChronicle.x86_64
+  1549970: # Aliens: Fireteam Elite
+    - Endeavor-Win64-Shipping.exe
+    - Endeavor.exe
+  1551360: # Forza Horizon 5
+    - ForzaHorizon5.exe
+  1552350: # The Jackbox Party Pack 8
+    - TJPP8_OpenGL
+    - TJPP8_Vulkan
+  1556790: # Isonzo
+    - Isonzo.exe
+  1566880: # SWORD ART ONLINE Last Recollection
+    - sao_lr-Win64-Shipping.exe
+    - sao_lr.exe
+  1583230: # High On Life
+    - Oregon-Win64-Shipping.exe
+    - Oregon.exe
+  1588530: # Dungeon Alchemist
+    - Dungeon Alchemist.x64
+  1592280: # Selaco
+    - Selaco.x86_64
+  1599340: # Lost Ark
+    - LOSTARK.exe
+  1601580: # Frostpunk 2
+    - Frostpunk2-Win64-Shipping.exe
+    - Frostpunk2.exe
+  1608070: # CRISIS CORE –FINAL FANTASY VII– REUNION
+    - CCFF7R-Win64-Shipping.exe
+    - CCFF7R.exe
+  1608470: # Warstride Challenges
+    - Warstride-Win64-Shipping.exe
+    - Warstride.exe
+  1610470: # MXGP 2021 - The Official Motocross Videogame
+    - mxgp7-Win64-Shipping.exe
+    - mxgp7.exe
+  1621690: # Core Keeper
+    - CoreKeeper
+  1623730: # Palworld
+    - Palworld-Win64-Shipping.exe
+    - Palworld.exe
+  1623940: # Bramble: The Mountain King
+    - Bramble_TMK-Win64-Shipping.exe
+    - Bramble_TMK.exe
+  1627570: # The Plucky Squire
+    - Storybook-Win64-Shipping.exe
+    - Storybook.exe
+  1627720: # Lies of P
+    - LOP-Win64-Shipping.exe
+    - LOP.exe
+  1637320: # Dome Keeper
+    - domekeeper.x86_64
+  1643320: # S.T.A.L.K.E.R. 2: Heart of Chornobyl
+    - Stalker2-Win64-Shipping.exe
+    - Stalker2.exe
+  1644960: # NBA 2K22
+    - NBA2K22.exe
+  1645820: # SurrounDead
+    - SurrounDead-Win64-Shipping.exe
+    - SurrounDead.exe
+  1649080: # Two Point Campus
+    - TPC.exe
+  1649240: # Returnal
+    - Returnal.exe
+  1650010: # RIDE 5
+    - ride5-Win64-Shipping.exe
+    - ride5.exe
+  1659040: # HITMAN World of Assassination
+    - HITMAN3.exe
+  1659420: # UNCHARTED: Legacy of Thieves Collection
+    - tll-l.exe
+    - tll.exe
+    - u4-l.exe
+    - u4.exe
+  1669000: # Age of Wonders 4
+    - AOW4.exe
+    - ContentEd.exe
+    - dowser.exe
+    - LevelEd.exe
+    - Paradox Launcher.exe
+    - ResourceBrowser.exe
+    - ResourceED.exe
+  1672500: # GUNDAM BREAKER 4
+    - GB4-Win64-Shipping.exe
+    - GB4.exe
+  1677110: # Lightyear Frontier
+    - FarMech-Win64-Shipping.exe
+    - LightyearFrontier.exe
+  1680880: # Forspoken
+    - FORSPOKEN.exe
+  1681430: # RoboCop: Rogue City
+    - RoboCop-Win64-Shipping.exe
+    - RoboCop.exe
+  1684350: # The Thaumaturge
+    - TheThaumaturge-Win64-Shipping.exe
+    - TheThaumaturge.exe
+  1687950: # Persona 5 Royal
+    - P5R.exe
+  1689620: # BLEACH Rebirth of Souls
+    - BLEACH_Rebirth_of_Souls.exe
+  1699480: # KLETKA
+    - KLETKA.exe
+    - KLETKA.sh
+  1702010: # Sengoku Dynasty
+    - SengokuDynasty-Win64-Shipping.exe
+    - SengokuDynasty.exe
+  1703340: # The Stanley Parable: Ultra Deluxe
+    - The Stanley Parable Ultra Deluxe.x86_64
+  1710580: # MotoGP22
+    - motogp22-Win64-Shipping.exe
+    - motogp22.exe
+  1716120: # Monster Rancher 1 & 2 DX
+    - MF.exe
+    - MF2.exe
+  1721470: # Poppy Playtime
+    - PlaytimeLauncher-Win64-Shipping.exe
+    - PlaytimeLauncher.exe
+    - Poppy_Playtime-Win64-Shipping.exe
+    - Poppy_Playtime.exe
+  1730680: # Klonoa Phantasy Reverie Series
+    - Klonoa.exe
+  1773180: # The Matriarch
+    - TheMatriarch-Win64-Shipping.exe
+    - TheMatriarch.exe
+  1776380: # STAR OCEAN THE DIVINE FORCE
+    - SO6.exe
+  1785150: # Friends vs Friends
+    - Friends vs Friends.exe
+  1785650: # TopSpin 2K25
+    - topspin2k25.exe
+  1790600: # DRAGON BALL: Sparking! ZERO
+    - SparkingZERO-Win64-Shipping.exe
+    - SparkingZERO.exe
+  1794680: # Vampire Survivors
+    - VampireSurvivors.exe
+  1799930: # Redout 2
+    - Redout2-Win64-Shipping.exe
+    - redout2.exe
+  1805480: # Like a Dragon: Ishin!
+    - LikeaDragonIshin-Win64-Shipping.exe
+  1812450: # Bellwright
+    - BellwrightGame-Win64-Shipping.exe
+    - BellwrightGame.exe
+  1817070: # Marvel’s Spider-Man Remastered
+    - Spider-Man.exe
+  1817230: # Hi-Fi RUSH
+    - Hi-Fi-RUSH.exe
+  1823950: # Laysara: Summit Kingdom
+    - Laysara.exe
+  1840080: # Homeworld 3
+    - Homeworld3.exe
+  1844380: # Warhammer Age of Sigmar: Realms of Ruin
+    - Warhammer Age of Sigmar - Realms of Ruin.exe
+  1845910: # Dragon Age: The Veilguard
+    - Dragon Age The Veilguard.exe
+  1846380:
+    - NeedForSpeedUnbound.exe
+  1850570: # DEATH STRANDING DIRECTOR'S CUT
+    - DeathStranding.exe
+  1850960: # The Jackbox Party Pack 9
+    - TJPP9_OpenGL
+    - TJPP9_Vulkan
+  1858630: # SWORD ART ONLINE Fractured Daydream
+    - SAOFD.exe
+  1868140: # DAVE THE DIVER
+    - DaveTheDiver.exe
+  1874880: # Arma Reforger
+    - ArmaReforger_BE.exe
+    - ArmaReforgerSteam.exe
+  1875830: # Shin Megami Tensei V: Vengeance
+    - SMT5V-Win64-Shipping.exe
+    - SMT5V.exe
+  1876890: # Wandering Sword
+    - JH-Win64-Shipping.exe
+    - JH.exe
+  1877020: # Jujutsu Kaisen Cursed Clash
+    - Jujutsu Kaisen CC.exe
+  1881200: # TRYP FPV: Drone Racer Simulator
+    - TrypFPV-Win64-Shipping.exe
+    - TrypFPV.exe
+  1888160: # ARMORED CORE VI FIRES OF RUBICON
+    - armoredcore6.exe
+  1888930: # The Last of Us Part I
+    - tlou-i-l.exe
+    - tlou-i.exe
+  1895880: # Ratchet & Clank: Rift Apart
+    - RiftApart.exe
+  1903340: # Clair Obscur: Expedition 33
+    - Expedition33_Steam.exe
+    - SandFall-Win64-Shipping.exe
+  1915380: # Garden Life: A Cozy Simulator
+    - GardenLife-Win64-Shipping.exe
+    - GardenLife.exe
+  1929610: # Demonologist
+    - Demonologist.exe
+    - Shivers-Win64-Shipping.exe
+  1934570: # South of Midnight
+    - SouthOfMidnight.exe
+  1934680: # Age of Mythology: Retold
+    - AoMRT_s.exe
+  1938090: # Call of Duty: Modern Warfare II
+    - cod.exe
+  1939970: # Nobody Wants to Die
+    - detnoir-Win64-Shipping.exe
+    - detnoir.exe
+  1942280: # Brotato
+    - Brotato.exe
+  1943950: # Escape the Backrooms
+    - Backrooms-Win64-Shipping.exe
+    - Backrooms.exe
+  1944430: # Amnesia: The Bunker
+    - AmnesiaTheBunker_NoSteam.exe
+    - AmnesiaTheBunker.exe
+  1971650: # OCTOPATH TRAVELER II
+    - Octopath_Traveler2-Win64-Shipping.exe
+  1978590: # Anger Foot
+    - AngerFoot.exe
+  1979440: # SAND LAND
+    - SANDLAND-Win64-Shipping.exe
+    - SANDLAND.exe
+  1997660: # GreedFall: The Dying World
+    - GreedFall2.exe
+  2009350: # Out of Ore
+    - OutOfOre-Win64-Shipping.exe
+    - OutOfOre.exe
+  2021910: # FPS Chess
+    - FPSChess-Win64-Shipping.exe
+  2022670: # SONIC SUPERSTARS
+    - SonicSuperstars_boot.exe
+    - SonicSuperstars.exe
+  2058190: # Lost Judgment
+    - LostJudgment.exe
+  2060160: # The Farmer Was Replaced
+    - TheFarmerWasReplaced.exe
+  2066020: # Soulstone Survivors
+    - Soulstone-Survivors.x86_64
+  2072450: # Like a Dragon: Infinite Wealth
+    - likeadragon8.exe
+  2075070: # KinitoPET
+    - KinitoPET.exe
+    - lense.exe
+  2078450: # Warhammer 40,000: Speed Freeks
+    - SpeedFreeks-Win64-Shipping.exe
+    - SpeedFreeks.exe
+  2100160: # MotoGP23
+    - motogp23-Win64-Shipping.exe
+    - motogp23.exe
+  2104890: # RoadCraft
+    - Roadcraft.exe
+  2106840: # PARANORMASIGHT: The Seven Mysteries of Honjo
+    - PPARANORMASIGHT.exe
+  2109370: # The Great War: Western Front
+    - ClientG64.exe
+  2116120: # Incursion Red River
+    - Test_C-Win64-Shipping.exe
+    - Test_C.exe
+  2124490: # SILENT HILL 2
+    - SHProto-Win64-Shipping.exe
+    - SHProto.exe
+  2131650: # METAL GEAR SOLID 3: Snake Eater - Master Collection Version
+    - METAL GEAR SOLID3.exe
+  2131680: # METAL GEAR & METAL GEAR 2: Solid Snake
+    - METAL GEAR.exe
+  2141730: # Backrooms: Escape Together
+    - BetGame.exe
+    - BETGameSteam-Win64-Shipping.exe
+  2144740: # Ghostrunner 2
+    - Ghostrunner2-Win64-Shipping.exe
+    - Ghostrunner2.exe
+  2161700: # Persona 3 Reload
+    - P3R.exe
+  2162800: # shapez 2
+    - shapez 2.x86_64
+  2169200: # Sniper Elite: Resistance
+    - sniperresistance_dx12.exe
+    - sniperresistance.exe
+  2183900:
+    - Warhammer 40000 Space Marine 2 - Retail.exe
+  2185060: # Two Point Museum
+    - TPM.exe
+  2208920: # Assassin's Creed Valhalla
+    - ACValhalla_Plus.exe
+    - ACValhalla.exe
+  2211170: # Unrailed 2: Back on Track
+    - Unrailed2.exe
+  2215430: # Ghost of Tsushima DIRECTOR'S CUT
+    - GhostOfTsushima.exe
+  2216830: # The Jackbox Party Pack 10
+    - TJPP10_OpenGL
+    - TJPP10_Vulkan
+  2218750: # Halls of Torment
+    - HallsOfTorment.x86_64
+  2221490: # Tom Clancy’s The Division 2
+    - EACLaunch.exe
+    - TheDivision2.exe
+    - thedivision2launcher.exe
+  2233120: # A Quiet Place: The Road Ahead
+    - AQuietPlace-Win64-Shipping.exe
+    - AQuietPlace.exe
+  2252570: # Football Manager 2024
+    - Berkelium.exe
+    - FM.exe
+    - fm.exe
+  2273980: # Orcs Must Die! Deathtrap
+    - OMDDSteam-Win64-Shipping.exe
+    - "Orcs Must Die! Deathtrap.exe"
+  2287520: # Five Nights at Freddy's: Help Wanted 2
+    - HW2-Win64-Shipping.exe
+    - HW2.exe
+  2288150: # ROMANCE OF THE THREE KINGDOMS 8 REMAKE
+    - SAN8R.exe
+    - San8rWER.exe
+  2290180: # Riders Republic
+    - RidersRepublic_BE.exe
+    - RidersRepublic.exe
+  2292800: # Blacksmith Master
+    - BlacksmithMaster.x86_64
+  2294660: # The Quinfall
+    - TheQuinfall.exe
+  2300320: # Farming Simulator 25
+    - FarmingSimulator2025.exe
+    - FarmingSimulator2025Game.exe
+  2351560: # Apocalypse Party
+    - TheLastSurvivor-Win64-Shipping.exe
+    - TheLastSurvivor.exe
+  2358720: # Black Myth: Wukong
+    - b1-Win64-Shipping.exe
+    - b1.exe
+  2375550: # Like a Dragon Gaiden: The Man Who Erased His Name
+    - likeadragongaiden.exe
+  2399420: # Le Mans Ultimate
+    - Le Mans Ultimate.exe
+  2399830: # ARK: Survival Ascended
+    - ArkAscended_BE.exe
+    - ArkAscended.exe
+    - ShooterGame-Win64-Shipping.exe
+  2406770: # Bodycam
+    - Bodycam-Win64-Shipping.exe
+    - Bodycam.exe
+  2420110: # Horizon Forbidden West Complete Edition
+    - HorizonForbiddenWest.exe
+  2427700: # Backpack Battles
+    - BackpackBattles.x86_64
+  2437170: # SMITE 2
+    - Hemingway-Win64-Shipping.exe
+    - Hemingway.exe
+  2456740: # inZOI
+    - inZOI-Win64-Shipping.exe
+    - inZOI.exe
+  2457220: # Avowed
+    - Avowed-Win64-Shipping.exe
+    - Avowed.exe
+  2458830: # Towerborne
+    - Belfry-Win64-Shipping.exe
+    - Belfry.exe
+  2461850: # Senua’s Saga: Hellblade II
+    - Hellblade2-Win64-Shipping.exe
+    - Hellblade2.exe
+  2464530: # VOIN
+    - VOIN-Win64-Shipping.exe
+    - VOIN.exe
+  2477340: # Expeditions: A MudRunner Game
+    - Expeditions.exe
+  2479810: # Gray Zone Warfare
+    - GZWClientEAC.exe
+    - GZWClientSteam-Win64-Shipping.exe
+  2490990: # Visions of Mana
+    - VisionsofMana-Win64-Shipping.exe
+    - VisionsofMana.exe
+  2513280: # SONIC X SHADOW GENERATIONS
+    - SONIC_GENERATIONS.exe
+    - SONIC_X_SHADOW_GENERATIONS.exe
+  2515020: # FINAL FANTASY XVI
+    - ffxvi.exe
+  2525310: # Drop Duchy
+    - DropDuchy-Win64-Shipping.exe
+    - DropDuchy.exe
+  2530980: # Tales of Graces f Remastered
+    - Tales of Graces f Remastered.exe
+  2531310: # The Last of Us Part II Remastered
+    - tlou-ii-l.exe
+    - tlou-ii.exe
+  2537590: # Microsoft Flight Simulator 2024
+    - FlightSimulator2024.exe
+  2552430: # KINGDOM HEARTS -HD 1.5+2.5 ReMIX-
+    - KINGDOM HEARTS Birth by Sleep FINAL MIX.exe
+    - KINGDOM HEARTS FINAL MIX.exe
+    - KINGDOM HEARTS HD 1.5+2.5 ReMIX.exe
+    - KINGDOM HEARTS II FINAL MIX.exe
+    - KINGDOM HEARTS Re_Chain of Memories.exe
+    - KINGDOM HEARTS Theater.exe
+  2561580: # Horizon Zero Dawn Remastered
+    - HorizonZeroDawnRemastered.exe
+  2581700: # MotoGP24
+    - motogp24-Win64-Shipping.exe
+    - motogp24.exe
+  2599300: # Dead Signal
+    - DeadSignal-Win64-Shipping.exe
+    - DeadSignal.exe
+  2622000: # Astral Party
+    - AstralParty_CN.exe
+    - AstralParty_INT.exe
+  2622380: # ELDEN RING NIGHTREIGN
+    - nightreign.exe
+  2623190: # The Elder Scrolls IV: Oblivion Remastered
+    - OblivionRemastered-Win64-Shipping.exe
+    - OblivionRemastered.exe
+  2625420: # Drive Beyond Horizons
+    - DriveBeyondHorizons.exe
+  2634950: # Tokyo Xtreme Racer
+    - TokyoXtremeRacer-Win64-Shipping.exe
+  2646460: # Soulmask
+    - WS-Win64-Shipping.exe
+    - WS.exe
+  2651280: # Marvel's Spider-Man 2
+    - Spider-Man2.exe
+  2668510: # Red Dead Redemption
+    - PlayRDR.exe
+    - RDR.exe
+  2669320:
+    - FC25_Trial.exe
+    - FC25.exe
+  2669410: # Metro Awakening
+    - Impact-Win64-Shipping.exe
+    - Impact.exe
+  2679460: # Metaphor: ReFantazio
+    - METAPHOR.exe
+  2680010: # The First Berserker: Khazan
+    - BBQ-Win64-Shipping.exe
+    - KZ.exe
+  2688950: # Planet Coaster 2
+    - PlanetCoaster2.exe
+  2694490: # Path of Exile 2
+    - PathOfExile_x64.exe
+    - PathOfExile_x64Steam.exe
+    - PathOfExile.exe
+    - PathOfExileSteam.exe
+  2698940: # The Crew Motorfest
+    - TheCrewMotorfest_BE.exe
+    - TheCrewMotorfest.exe
+  2701660: # DRAGON QUEST III HD-2D Remake
+    - DQIIIHD2DRemake.exe
+  2754380: # The Roottrees are Dead
+    - roottrees
+  2780980: # LOCKDOWN Protocol
+    - LockdownProtocol-Win64-Shipping.exe
+    - LockdownProtocol.exe
+  2853730: # Skull and Bones
+    - skullandbones_BE.exe
+    - skullandbones.exe
+  2878980: # NBA 2K25
+    - NBA2K25.exe
+  2918150: # ONE PIECE Bounty Rush
+    - BountyRush.exe
+  2933130: # The Lord of the Rings: Return to Moria
+    - Moria-Win64-Shipping.exe
+    - Moria.exe
+  2950340: # LEGO Harry Potter Collection
+    - harry1.exe
+    - LHPC.exe
+  2993780: # FANTASY LIFE i: The Girl Who Steals Time
+    - NFL1-Win64-Shipping.exe
+    - NFL1.exe
+  3004100: # FREEDOM WARS Remastered
+    - START.exe
+  3014080: # The Hundred Line -Last Defense Academy-
+    - HUNDRED_LINE.exe
+  3017860: # DOOM: The Dark Ages
+    - DOOMTheDarkAges.exe
+  3059070: # The Headliners
+    - Headliners-Win64-Shipping.exe
+    - Headliners.exe
+  3061810: # Like a Dragon: Pirate Yakuza in Hawaii
+    - likeadragonpirates.exe
+  3117820: # Sultan's Game
+    - "Sultan's Game.x86_64"
+  3191050: # BRAZILIAN DRUG DEALER 3: I OPENED A PORTAL TO HELL IN THE FAVELA TRYING TO REVIVE MIT AIA I NEED TO CLOSE IT
+    - AVIAO3.exe
+    - AVIAO3GAME.exe
+  3213850: # gogh: Focus with Your Avatar
+    - gogh.exe
+  3228590: # Deadzone: Rogue
+    - DeadzoneSteam-Win64-Shipping.exe
+    - DeadzoneSteam.exe
+  3240220: # Grand Theft Auto V Enhanced
+    - GTA5_Enhanced_BE.exe
+    - GTA5_Enhanced.exe
+    - PlayGTAV.exe
+  3371240: # Beyond Citadel
+    - beyond_citadel-Win64-Shipping.exe
+    - beyond_citadel.exe

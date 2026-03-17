@@ -7,6 +7,7 @@ RUN npm ci
 
 COPY tsconfig.json ./
 COPY src/ src/
+COPY generate_conf.yaml ./
 
 RUN mkdir -p data
 

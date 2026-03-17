@@ -1,2 +1,4 @@
 node_modules/
 data/games.db
+.vendor/
+.idea
