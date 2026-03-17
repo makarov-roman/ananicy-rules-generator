@@ -3,6 +3,19 @@
 Generates ananicy process priority rules for Steam games using SteamSpy and Steam PICS data.
 
 ```sh
+# via docker
+docker build -t ananicy-rules .
+
+# Fetch SteamSpy data (persists DB via volume)
+docker run -v ./data:/app/data ananicy-rules fetch-spy
+
+# Fetch executables
+docker run -v ./data:/app/data ananicy-rules fetch-pics
+
+# Generate rules
+docker run -v ./data:/app/data ananicy-rules generate --min-reviews 1000 --top-weekly
+
+# directly
 npm install
 npx tsx src/index.ts fetch-spy          # scrape SteamSpy (slow, ~1 req/min)
 npx tsx src/index.ts fetch-spy 5        # resume from page 5
