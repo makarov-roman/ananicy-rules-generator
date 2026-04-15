@@ -31,14 +31,15 @@ switch (command) {
     const minReviews = parseArg(args, "--min-reviews");
     const topWeekly = parseArg(args, "--top-weekly");
     const configPath = parseStringArg(args, "--config");
+    const vendorGamesDir = parseStringArg(args, "--vendor-games");
     const { generate } = await import("./generate");
-    generate({ minReviews, topWeekly, configPath });
+    generate({ minReviews, topWeekly, configPath, vendorGamesDir });
     break;
   }
   default:
     console.log(
       "Usage: npx tsx src/index.ts <fetch-spy|fetch-pics|generate>\n" +
-        "  generate [--min-reviews N] [--top-weekly N] [--config path/to/generate_conf.yaml]",
+        "  generate [--min-reviews N] [--top-weekly N] [--config path/to/generate_conf.yaml] [--vendor-games path/to/00-default/Games]",
     );
     process.exit(1);
 }

@@ -2,13 +2,23 @@
   "name": "ananicy-rules-generator",
   "type": "module",
   "dependencies": {
-    "better-sqlite3": "^12.8.0",
-    "steam-user": "^5.2.0",
-    "yaml": "^2.8.2"
+    "better-sqlite3": "^12.9.0",
+    "steam-user": "^5.3.0",
+    "yaml": "^2.8.3"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.6.0",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.2"
+  },
+  "scripts": {
+    "test": "tsx --test src/vendor_upstream.test.ts",
+    "fetch-spy": "tsx src/index.ts fetch-spy",
+    "fetch-pics": "tsx src/index.ts fetch-pics",
+    "generate": "tsx src/index.ts generate",
+    "generate:example": "tsx src/index.ts generate --min-reviews 1000 --top-weekly 5000",
+    "compare-vendor": "node scripts/compare-vendor-generated.mjs",
+    "diff-to-overrides": "node scripts/diff-to-overrides.mjs"
   }
 }

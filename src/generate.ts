@@ -1,8 +1,22 @@
-import { existsSync, readFileSync } from "fs";
+import { existsSync } from "fs";
 import { join } from "path";
-import { parse } from "yaml";
 import { getDb } from "./db";
-import { binPassesFilters, type FilterId, isKnownFilterId } from "./generate_filters";
+import { binPassesFilters, type FilterId } from "./generate_filters";
+import {
+  DEFAULT_VENDOR_GAMES_DIR,
+  upstreamDefinedAppIds,
+} from "./vendor_upstream";
+import {
+  loadSortConfig,
+  sortTitleStats,
+  type TitleSteamSpyStats,
+} from "./sort_config";
+import {
+  DEFAULT_OUTPUT_FLAGS,
+  tryLoadGenerateConf,
+  type OutputFlags,
+  type OverridesMap,
+} from "./yaml_conf";
 
 /** Default config file next to package root */
 const DEFAULT_GENERATE_CONF_PATH = join(
@@ -11,60 +25,10 @@ const DEFAULT_GENERATE_CONF_PATH = join(
   "generate_conf.yaml",
 );
 
-interface GenerateConfYaml {
-  filters?: unknown;
-  /** Steam appid → process basenames that replace auto-generated rules for that app */
-  overrides?: unknown;
-}
-
-export type OverridesMap = Map<number, string[]>;
-
 interface GameEntry {
   name: string;
   wine: Set<string>;
   native: Set<string>;
-}
-
-function loadGenerateYaml(
-  filePath: string,
-): { filters: Set<FilterId>; overrides: OverridesMap } {
-  const raw = readFileSync(filePath, "utf8");
-  const doc = parse(raw) as GenerateConfYaml;
-
-  const filters = new Set<FilterId>();
-  const list = Array.isArray(doc.filters) ? doc.filters : [];
-
-  for (const entry of list) {
-    if (typeof entry !== "string") {
-      console.warn("generate: skip non-string filter entry");
-      continue;
-    }
-    if (!isKnownFilterId(entry)) {
-      console.warn(`generate: unknown filter "${entry}", ignoring`);
-      continue;
-    }
-    filters.add(entry);
-  }
-
-  const overrides: OverridesMap = new Map();
-  const ov = doc.overrides;
-  if (ov !== undefined && ov !== null && typeof ov === "object" && !Array.isArray(ov)) {
-    for (const [key, value] of Object.entries(ov as Record<string, unknown>)) {
-      const appid = parseInt(String(key), 10);
-      if (Number.isNaN(appid)) {
-        console.warn(`generate: overrides: skip non-numeric app id "${key}"`);
-        continue;
-      }
-      if (!Array.isArray(value)) {
-        console.warn(`generate: overrides[${appid}]: expected array, skipping`);
-        continue;
-      }
-      const names = value.filter((x): x is string => typeof x === "string" && x.length > 0);
-      if (names.length > 0) overrides.set(appid, names);
-    }
-  }
-
-  return { filters, overrides };
 }
 
 /** Routes override basenames to Wine (.exe) vs Native (everything else). */
@@ -117,6 +81,8 @@ function removeGamesWithNoBins(games: Map<number, GameEntry>) {
 interface Row {
   appid: number;
   name: string;
+  reviews: number;
+  median2weeks: number;
   platform: string;
   bin: string;
 }
@@ -126,6 +92,8 @@ export interface GenerateOptions {
   topWeekly?: number;
   /** Path to generate_conf.yaml; default is repo-root generate_conf.yaml if it exists */
   configPath?: string;
+  /** Vendor `00-default/Games` tree — used to list ## Not in upstream (full rules not yet upstream). */
+  vendorGamesDir?: string;
 }
 
 export function generate(opts: GenerateOptions = {}) {
@@ -135,9 +103,21 @@ export function generate(opts: GenerateOptions = {}) {
   }
 
   const confPath = opts.configPath ?? DEFAULT_GENERATE_CONF_PATH;
-  const { filters, overrides } = existsSync(confPath)
-    ? loadGenerateYaml(confPath)
-    : { filters: new Set<FilterId>(), overrides: new Map<number, string[]>() };
+  const conf = tryLoadGenerateConf(confPath);
+  const filters = conf?.filters ?? new Set<FilterId>();
+  const overrides: OverridesMap = conf?.overrides ?? new Map<number, string[]>();
+  const outputFlags: OutputFlags = conf?.output ?? { ...DEFAULT_OUTPUT_FLAGS };
+
+  const { sortBy, sortDirection } = loadSortConfig(confPath);
+
+  const vendorDir = opts.vendorGamesDir ?? DEFAULT_VENDOR_GAMES_DIR;
+  const vendorOk = existsSync(vendorDir);
+  if (!vendorOk) {
+    console.warn(
+      `generate: vendor Games dir not found (${vendorDir}); ## Not in upstream cannot be computed.`,
+    );
+  }
+  const upstreamIds = vendorOk ? upstreamDefinedAppIds(vendorDir) : new Set<number>();
 
   const db = getDb();
 
@@ -160,7 +140,7 @@ export function generate(opts: GenerateOptions = {}) {
 
   const rows: Row[] = db
     .prepare(
-      `SELECT DISTINCT t.appid, t.name, lo.platform, lo.bin
+      `SELECT DISTINCT t.appid, t.name, t.reviews, t.median2weeks, lo.platform, lo.bin
        FROM title t
        JOIN launch_option lo ON lo.appid = t.appid
        WHERE 1=1 ${where}
@@ -169,6 +149,16 @@ export function generate(opts: GenerateOptions = {}) {
     .all(...params) as Row[];
 
   db.close();
+
+  const statsByAppId = new Map<number, { reviews: number; median2weeks: number }>();
+  for (const row of rows) {
+    if (!statsByAppId.has(row.appid)) {
+      statsByAppId.set(row.appid, {
+        reviews: row.reviews,
+        median2weeks: row.median2weeks,
+      });
+    }
+  }
 
   if (rows.length === 0) {
     console.log("No data. Run fetch-spy and fetch-pics first.");
@@ -211,15 +201,63 @@ export function generate(opts: GenerateOptions = {}) {
       a[1].localeCompare(b[1], undefined, { sensitivity: "base" }),
     );
 
-  const sortedRules = [...games.entries()].sort((a, b) =>
-    a[1].name.localeCompare(b[1].name, undefined, { sensitivity: "base" }),
+  /** Order Autogenerated / Overridden by `generate_conf.yaml` `sort`. */
+  const statsForSort: TitleSteamSpyStats[] = [];
+  for (const [appid, game] of games) {
+    const st = statsByAppId.get(appid);
+    statsForSort.push({
+      appid,
+      name: game.name,
+      reviews: st?.reviews ?? 0,
+      median2weeks: st?.median2weeks ?? 0,
+    });
+  }
+  const sortedByConfig = sortTitleStats(
+    statsForSort,
+    sortBy,
+    sortDirection,
   );
+  const sortedRules = sortedByConfig.map((r) => {
+    const game = games.get(r.appid)!;
+    return [r.appid, game] as [number, GameEntry];
+  });
 
   const generatedRules = sortedRules.filter(([appid]) => !manualAppIds.has(appid));
   const overriddenRules = sortedRules.filter(([appid]) => manualAppIds.has(appid));
 
-  function emitGame(lines: string[], appid: number, game: GameEntry) {
+  /** Games with emitted rules whose appid is absent from vendor (same JSON as Autogenerated — contribution / diff). */
+  const notInUpstreamStats: TitleSteamSpyStats[] = [];
+  if (vendorOk) {
+    for (const [appid, game] of games) {
+      if (!upstreamIds.has(appid)) {
+        const st = statsByAppId.get(appid);
+        notInUpstreamStats.push({
+          appid,
+          name: game.name,
+          reviews: st?.reviews ?? 0,
+          median2weeks: st?.median2weeks ?? 0,
+        });
+      }
+    }
+  }
+  const notInUpstreamSorted = sortTitleStats(
+    notInUpstreamStats,
+    sortBy,
+    sortDirection,
+  );
+
+  function emitGame(
+    lines: string[],
+    appid: number,
+    game: GameEntry,
+    stats: { reviews: number; median2weeks: number } | undefined,
+  ) {
     lines.push(`# ${appid}: ${game.name}`);
+    if (stats) {
+      lines.push(
+        `# SteamSpy: reviews=${stats.reviews} median2weeks=${stats.median2weeks}`,
+      );
+    }
     if (game.wine.size > 0) {
       lines.push("## Wine");
       for (const bin of [...game.wine].sort()) {
@@ -237,48 +275,100 @@ export function generate(opts: GenerateOptions = {}) {
 
   const lines: string[] = [];
 
-  lines.push("## Autogenerated");
-  lines.push("");
-  if (generatedRules.length === 0) {
-    lines.push("# (none)");
+  const sections: string[][] = [];
+
+  if (outputFlags.autogenerated) {
+    const chunk: string[] = [];
+    chunk.push("## Autogenerated");
+    chunk.push("");
+    if (generatedRules.length === 0) {
+      chunk.push("# (none)");
+      chunk.push("");
+    } else {
+      for (const [appid, game] of generatedRules) {
+        emitGame(chunk, appid, game, statsByAppId.get(appid));
+      }
+    }
+    sections.push(chunk);
+  }
+
+  if (outputFlags.overrides) {
+    const chunk: string[] = [];
+    chunk.push("## Overridden");
+    chunk.push("");
+    if (overriddenRules.length === 0) {
+      chunk.push("# (none)");
+      chunk.push("");
+    } else {
+      for (const [appid, game] of overriddenRules) {
+        emitGame(chunk, appid, game, statsByAppId.get(appid));
+      }
+    }
+    sections.push(chunk);
+  }
+
+  if (outputFlags.missing) {
+    const chunk: string[] = [];
+    chunk.push("## Not in upstream");
+    chunk.push("");
+    chunk.push(
+      "# Same rules as Autogenerated where applicable, for appids not yet under the vendor tree. Order: generate_conf.yaml sort.",
+    );
+    chunk.push("");
+    if (!vendorOk) {
+      chunk.push("# (skipped — Games directory not found)");
+      chunk.push("");
+    } else if (notInUpstreamSorted.length === 0) {
+      chunk.push("# (none — every appid in this run is already defined upstream)");
+      chunk.push("");
+    } else {
+      for (const r of notInUpstreamSorted) {
+        const game = games.get(r.appid);
+        if (game) {
+          emitGame(chunk, r.appid, game, statsByAppId.get(r.appid));
+        }
+      }
+    }
+    sections.push(chunk);
+  }
+
+  for (let i = 0; i < sections.length; i++) {
+    if (i > 0) {
+      lines.push("---");
+      lines.push("");
+    }
+    lines.push(...sections[i]);
+  }
+  const hasHeadSections = sections.length > 0;
+  if (hasHeadSections && outputFlags.noAutomaticRules) {
+    lines.push("---");
     lines.push("");
-  } else {
-    for (const [appid, game] of generatedRules) {
-      emitGame(lines, appid, game);
-    }
   }
 
-  lines.push("---");
-  lines.push("");
-  lines.push("## Overridden");
-  lines.push("");
-  if (overriddenRules.length === 0) {
-    lines.push("# (none)");
+  if (outputFlags.noAutomaticRules) {
+    lines.push("## No automatic rules");
     lines.push("");
-  } else {
-    for (const [appid, game] of overriddenRules) {
-      emitGame(lines, appid, game);
+    lines.push(
+      "# Apps with launch data in this run, but every option was removed by filters (or no binary left).",
+    );
+    lines.push("");
+
+    if (noRules.length === 0) {
+      lines.push("# (none)");
+    } else {
+      for (const [appid, name] of noRules) {
+        lines.push(`# ${appid}: ${name}`);
+        const st = statsByAppId.get(appid);
+        if (st) {
+          lines.push(
+            `# SteamSpy: reviews=${st.reviews} median2weeks=${st.median2weeks}`,
+          );
+        }
+      }
     }
+
+    lines.push("");
   }
-
-  lines.push("---");
-  lines.push("");
-  lines.push("## No automatic rules");
-  lines.push("");
-  lines.push(
-    "# Apps with launch data in this run, but every option was removed by filters (or no binary left).",
-  );
-  lines.push("");
-
-  if (noRules.length === 0) {
-    lines.push("# (none)");
-  } else {
-    for (const [appid, name] of noRules) {
-      lines.push(`# ${appid}: ${name}`);
-    }
-  }
-
-  lines.push("");
 
   process.stdout.write(lines.join("\n"));
 }
